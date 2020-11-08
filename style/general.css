@@ -1,0 +1,169 @@
+/*General Fonts Start*/
+@font-face {
+    font-family: 'Conv_Wisdom Script AJ';
+    src: url('../fonts/wisdom/Wisdom Script AJ.eot');
+    src: local('☺'), url('../fonts/wisdom/Wisdom Script AJ.woff') format('woff'), url('../fonts/wisdom/Wisdom Script AJ.ttf') format('truetype'), url('../fonts/wisdom/Wisdom Script AJ.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*General Style Start*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif, serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 50px;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 20px;
+}
+h5{
+    font-size: 16px;
+}
+h6{
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    margin: 0;
+    border: none;
+    padding: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+button:focus{
+    outline: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+.bg-bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.cl-logo{
+    color: #fc5f45;
+}
+
+.cl-white{
+    color: white;
+}
+.bg-white{
+    background-color: white;
+}
+
+.cl-green{
+    color: #38c695;
+}
+.bg-green{
+    background-color: #38c695;
+}
+.lg-green{
+    background: linear-gradient(to top, #38c695, transparent);
+}
+
+.cl-red{
+    color: #fc5f45;
+}
+.bg-red{
+    background-color: #fc5f45;
+}
+.lg-red{
+    background: linear-gradient(to top, #fc5f45, transparent);
+}
+
+.cl-purple{
+    color: #b27cf5;
+}
+.bg-purple{
+    background-color: #b27cf5;
+}
+.lg-purple{
+    background: linear-gradient(to top, #b27cf5, transparent);
+}
+
+.cl-orange{
+    color: #feb960;
+}
+.bg-orange{
+    background-color: #feb960;
+}
+.lg-orange{
+    background: linear-gradient(to top, #feb960, transparent);
+}
+
+/*General Style End*/
+
+/*Nav Style Start*/
+
+.header-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    padding: 9px 99px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo{
+    font-family: 'Conv_Wisdom Script AJ', sans-serif;
+    font-weight: normal;
+    font-size: 33px;
+}
+
+.nav-list a{
+    margin-right: 9px;
+    font-weight: 500;
+}
+
+.nav-list a:last-child{
+    margin: 0;
+}
+/*Nav Style End*/
