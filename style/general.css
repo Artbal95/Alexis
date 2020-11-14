@@ -57,9 +57,13 @@ button{
     padding: 4px;
     box-sizing: border-box;
     cursor: pointer;
+    transition: transform 100ms ease-in-out;
 }
 button:focus{
     outline: none;
+}
+button:active{
+    transform: translateY(2px);
 }
 
 input:focus{
