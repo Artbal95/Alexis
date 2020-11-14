@@ -22,7 +22,7 @@ body{
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Libre Baskerville', serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 h1{
     font-size: 60px;
@@ -74,7 +74,8 @@ input:focus{
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
 }
 
 .cl-logo{
