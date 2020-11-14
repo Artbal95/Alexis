@@ -1,17 +1,45 @@
+/*Nav Style Start*/
+.header-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    padding: 9px 99px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo{
+    font-family: 'Conv_Wisdom Script AJ', sans-serif;
+    font-weight: normal;
+    font-size: 33px;
+}
+.nav-list a{
+    margin-right: 9px;
+    font-weight: 500;
+}
+.nav-list a:last-child{
+    margin: 0;
+}
+/*Nav Style End*/
+
 /*Main Style Start*/
 
 .main-container{
     padding-top: 55px;
 }
 
-/*    Section Home Start*/
+/* = = = = = = = = = = Section Home Start = = = = = = = = = =*/
 .home-container{
     height: 850px;
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background-image: url("../images/home/home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,8 +84,52 @@
 .home-icon-items p{
     font-size: 18px;
 }
-/*    Section Home End*/
+/* = = = = = = = = = = Section Home End = = = = = = = = = =*/
 
+/* = = = = = = = = = = Section About Start = = = = = = = = = =*/
+.about-container{
+    height: 1000px;
+}
+.about-inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+.about-image{
+    width: 555px;
+    height: 700px;
+    position: relative;
+}
+.about-line-bg{
+    z-index: 2;
+    border: 10px solid rgba(0, 0, 0, .3);
+    box-sizing: border-box;
+}
+.about-information{
+    width: 650px;
+    background-color: white;
+    position: relative;
+    left: -70px;
+    z-index: 3;
+    padding: 80px;
+    box-sizing: border-box;
+}
+.one{
+    top: 0;
+    left: 0;
+}
+.about-info{
+    position: relative;
+    z-index: 2;
+}
+.about-title{
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+/* = = = = = = = = = = Section About End = = = = = = = = = =*/
 
 
 /*Main Style End*/
