@@ -1,4 +1,6 @@
-/*General Fonts Start*/
+/*General Style Start*/
+
+/* = = = = = = = = = = Global Fonts Start = = = = = = = = = =*/
 @font-face {
     font-family: 'Conv_Wisdom Script AJ';
     src: url('../fonts/wisdom/Wisdom Script AJ.eot');
@@ -6,21 +8,24 @@
     font-weight: normal;
     font-style: normal;
 }
-/*General Fonts End*/
+/* = = = = = = = = = = Global Fonts End = = = = = = = = = =*/
 
-
-/*General Style Start*/
+/* = = = = = = = = = = Global CSS Style Start = = = = = = = = = =*/
 *{
     margin: 0;
     padding: 0;
 }
-
+*:focus{
+    outline: none;
+}
 body{
     font-family: 'Poppins', sans-serif, serif;
     font-size: 15px;
     font-weight: 400;
 }
+/* = = = = = = = = = = Global CSS Style End = = = = = = = = = =*/
 
+/* = = = = = = = = = = Global Text, Buttons, a link, image and inputs Style Start = = = = = = = = = =*/
 h1,h2,h3,h4,h5,h6{
     font-family: 'Libre Baskerville', serif;
     font-weight: 400;
@@ -43,12 +48,10 @@ h5{
 h6{
     font-size: 12px;
 }
-
 a{
     text-decoration: none;
     color: black;
 }
-
 button{
     font-family: 'Poppins', sans-serif, serif;
     font-weight: 500;
@@ -65,36 +68,29 @@ button:focus{
 button:active{
     transform: translateY(2px);
 }
-
 input:focus{
     outline: none;
 }
-
-.upper{
-    text-transform: uppercase;
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+/* = = = = = = = = = = Global Text, Buttons, a link and inputs Style End = = = = = = = = = =*/
 
-.bg-bg{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.7);
-    z-index: 1;
-}
-
+/* = = = = = = = = = = Global Color CSS Start = = = = = = = = = =*/
 .cl-logo{
     color: #fc5f45;
 }
-
+.bg-bg-black{
+    background-color: rgba(0,0,0,0.7);
+}
 .cl-white{
     color: white;
 }
 .bg-white{
     background-color: white;
 }
-
 .cl-green{
     color: #38c695;
 }
@@ -102,9 +98,8 @@ input:focus{
     background-color: #38c695;
 }
 .lg-green{
-    background: linear-gradient(to top, #38c695, transparent);
+    background: linear-gradient(to top, #38c695 -30%, transparent 70%);
 }
-
 .cl-red{
     color: #fc5f45;
 }
@@ -112,9 +107,8 @@ input:focus{
     background-color: #fc5f45;
 }
 .lg-red{
-    background: linear-gradient(to top, #fc5f45, transparent);
+    background: linear-gradient(to top, #fc5f45 -30%, transparent 70%);
 }
-
 .cl-purple{
     color: #b27cf5;
 }
@@ -122,9 +116,8 @@ input:focus{
     background-color: #b27cf5;
 }
 .lg-purple{
-    background: linear-gradient(to top, #b27cf5, transparent);
+    background: linear-gradient(to top, #b27cf5 -30%, transparent 70%);
 }
-
 .cl-orange{
     color: #feb960;
 }
@@ -132,40 +125,54 @@ input:focus{
     background-color: #feb960;
 }
 .lg-orange{
-    background: linear-gradient(to top, #feb960, transparent);
+    background: linear-gradient(to top, #feb960 -30%, transparent 70%);
 }
+/* = = = = = = = = = = Global Color CSS End = = = = = = = = = =*/
 
-/*General Style End*/
-
-/*Nav Style Start*/
-.header-container{
-    position: absolute;
+/* = = = = = = = = = = Global Style Start = = = = = = = = = =*/
+div[class$='-container']{
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
-    height: 55px;
-    padding: 9px 99px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    bottom: 0;
 }
-.nav-container{
+.upper{
+    text-transform: uppercase;
+}
+.pos-abs{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.behind-line-pos{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
+    height: 3px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
-.nav-logo{
-    font-family: 'Conv_Wisdom Script AJ', sans-serif;
-    font-weight: normal;
-    font-size: 33px;
+.behind-line-items{
+    width: 100%;
+    height: 100%;
 }
-.nav-list a{
-    margin-right: 9px;
-    font-weight: 500;
+.numberPos{
+    position: absolute;
+    z-index: 1;
+    transform: translate(-15px, -95px);
 }
-.nav-list a:last-child{
-    margin: 0;
+.secNumber{
+    color: #e0e0e0;
+    font-size: 270px;
 }
-/*Nav Style End*/
+/* = = = = = = = = = = Global Style End = = = = = = = = = =*/
+
+/*General Style End*/
+
