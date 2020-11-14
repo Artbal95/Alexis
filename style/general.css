@@ -6,6 +6,8 @@
     font-weight: normal;
     font-style: normal;
 }
+/*General Fonts End*/
+
 
 /*General Style Start*/
 *{
@@ -19,10 +21,9 @@ body{
     font-weight: 400;
 }
 
-
 h1,h2,h3,h4,h5,h6{
     font-family: 'Libre Baskerville', serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 h1{
     font-size: 60px;
@@ -49,15 +50,20 @@ a{
 }
 
 button{
+    font-family: 'Poppins', sans-serif, serif;
+    font-weight: 500;
     margin: 0;
     border: none;
     padding: 4px;
     box-sizing: border-box;
     cursor: pointer;
+    transition: transform 100ms ease-in-out;
 }
-
 button:focus{
     outline: none;
+}
+button:active{
+    transform: translateY(2px);
 }
 
 input:focus{
@@ -74,7 +80,8 @@ input:focus{
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
 }
 
 .cl-logo{
@@ -131,7 +138,6 @@ input:focus{
 /*General Style End*/
 
 /*Nav Style Start*/
-
 .header-container{
     position: absolute;
     top: 0;
@@ -144,25 +150,21 @@ input:focus{
     align-items: center;
     justify-content: center;
 }
-
 .nav-container{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .nav-logo{
     font-family: 'Conv_Wisdom Script AJ', sans-serif;
     font-weight: normal;
     font-size: 33px;
 }
-
 .nav-list a{
     margin-right: 9px;
     font-weight: 500;
 }
-
 .nav-list a:last-child{
     margin: 0;
 }
