@@ -127,7 +127,6 @@
 }
 .about-title{
     margin-bottom: 50px;
-    font-weight: 700;
 }
 /* = = = = = = = = = = Section About End = = = = = = = = = =*/
 
@@ -146,7 +145,6 @@
     padding: 130px 90px;
 }
 .focus-title {
-    font-weight: 700;
     margin-bottom: 20px;
 }
 .focus-text {
@@ -193,7 +191,6 @@
     justify-content: center;
 }
 .video-title{
-    font-weight: 700;
     color: white;
     margin-bottom: 50px;
 }
@@ -210,6 +207,101 @@
     color: white;
 }
 /* = = = = = = = = = = Section Video End = = = = = = = = = =*/
+
+/* = = = = = = = = = = Section Portfolio Start = = = = = = = = = =*/
+.numberThree{
+    top: 115px;
+    left: 50%;
+}
+.portfolio-inner{
+    position: relative;
+    z-index: 2;
+    padding: 130px 90px;
+}
+.portfolio-title{
+    margin-bottom: 20px;
+}
+.portfolio-text{
+    margin-bottom: 80px;
+}
+.portfolio-table{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.portfolio-table-items{
+    width: 30%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+.portfolio-table-info{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    transition: top .5s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio-table-items:hover .portfolio-table-info{
+    top: 0;
+}
+.portfolio-table-info-top{
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+.portfolio-table-info-plus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    transition: box-shadow 150ms ease-in-out;
+}
+.plus-circle{
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 100%;
+    transition: box-shadow 150ms ease-in-out;
+}
+.portfolio-table-info-plus:hover{
+    box-shadow: 0 0 20px 5px #cacaca4d;
+}
+.line-horizontal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 2px;
+    background-color: white;
+}
+.line-vertical {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 80%;
+    background-color: white;
+}
+.portfolio-table-info-bottom {
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* = = = = = = = = = = Section Portfolio End = = = = = = = = = =*/
+
 
 
 

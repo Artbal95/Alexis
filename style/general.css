@@ -140,6 +140,9 @@ div[class$='-container']{
     right: 0;
     bottom: 0;
 }
+h2[class$='-title']{
+    font-weight: 700;
+}
 .upper{
     text-transform: uppercase;
 }
