@@ -140,6 +140,9 @@ div[class$='-container']{
 .upper{
     text-transform: uppercase;
 }
+.tx-center{
+    text-align: center;
+}
 .pos-abs{
     position: absolute;
     top: 0;
@@ -166,7 +169,7 @@ div[class$='-container']{
 .numberPos{
     position: absolute;
     z-index: 1;
-    transform: translate(-15px, -95px);
+    transform: translate(-50%, -50%);
 }
 .secNumber{
     color: #e0e0e0;

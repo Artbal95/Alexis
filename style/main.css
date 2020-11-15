@@ -88,7 +88,7 @@
 
 /* = = = = = = = = = = Section About Start = = = = = = = = = =*/
 .about-container{
-    height: 1000px;
+    min-height: 1000px;
 }
 .about-inner{
     position: absolute;
@@ -117,9 +117,9 @@
     padding: 80px;
     box-sizing: border-box;
 }
-.one{
-    top: 0;
-    left: 0;
+.numberOne{
+    top: 105px;
+    left: 115px;
 }
 .about-info{
     position: relative;
@@ -130,6 +130,53 @@
     font-weight: 700;
 }
 /* = = = = = = = = = = Section About End = = = = = = = = = =*/
+
+/* = = = = = = = = = = Section Focus Start = = = = = = = = = =*/
+.focus-container {
+    background-color: rgba(0, 0, 0, .05);
+}
+.numberTwo {
+    top: -95px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.focus-inner {
+    position: relative;
+    z-index: 2;
+    padding: 130px 90px;
+}
+.focus-title {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.focus-text {
+    margin-bottom: 80px;
+}
+.focus-table {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.focus-table-items {
+    position: relative;
+    width: 190px;
+    height: 240px;
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.focus-table-icon {
+    margin-bottom: 25px;
+}
+.focus-table-title {
+    margin-bottom: 25px;
+}
+
+/* = = = = = = = = = = Section Focus End = = = = = = = = = =*/
 
 
 /*Main Style End*/

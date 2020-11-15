@@ -4,37 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport">
     <title>Alexis</title>
-<!--    Fonts Start-->
+    <!--    Fonts Start-->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
-<!--    Fonts End-->
+    <!--    Fonts End-->
 
-<!--    Css Style Start-->
+    <!--    Css Style Start-->
     <link rel="stylesheet" href="style/general.css">
     <link rel="stylesheet" href="style/main.css">
-<!--    Css Style End-->
+    <!--    Css Style End-->
 </head>
 <body>
 
 <header class="header-container">
     <nav class="nav">
         <div class="nav-logo">
-            <a href="#" data-id="home">
+            <a href="#" data-scroll="home">
                 <p>
                     <span class="cl-logo">A</span>lexis
                 </p>
             </a>
         </div>
         <div class="nav-list">
-                <a href="#" data-id="about">About Us</a>
-                <a href="#" data-id="focus">Our Focus</a>
-                <a href="#" data-id="portfolio">Portfolio</a>
-                <a href="#" data-id="team">Our Team</a>
-                <a href="#" data-id="work">Work Steps</a>
-                <a href="#" data-id="pricing">Pricing</a>
-                <a href="#" data-id="testimonials">Testimonials</a>
-                <a href="#" data-id="blog">Blog</a>
-                <a href="#" data-id="contact">Contact</a>
+            <a href="#" data-scroll="about">About Us</a>
+            <a href="#" data-scroll="focus">Our Focus</a>
+            <a href="#" data-scroll="portfolio">Portfolio</a>
+            <a href="#" data-scroll="team">Our Team</a>
+            <a href="#" data-scroll="work">Work Steps</a>
+            <a href="#" data-scroll="pricing">Pricing</a>
+            <a href="#" data-scroll="testimonials">Testimonials</a>
+            <a href="#" data-scroll="blog">Blog</a>
+            <a href="#" data-scroll="contact">Contact</a>
         </div>
         <div class="nav-mobile" style="display: none">
         </div>
@@ -42,7 +42,7 @@
 </header>
 <main class="main-container">
 
-    <section class="home" id="home">
+    <section class="home" data-scrollTo="home">
         <div class="home-container">
             <div class="pos-abs bg-bg-black"></div>
             <div class="home-inner">
@@ -80,7 +80,7 @@
         </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="about" data-scrollTo="about">
         <div class="about-container">
             <div class="about-inner">
                 <div class="about-image">
@@ -89,7 +89,7 @@
                     <div class="pos-abs about-line-bg"></div>
                 </div>
                 <div class="about-information">
-                    <div class="numberPos one">
+                    <div class="numberPos numberOne">
                         <p class="secNumber">01</p>
                     </div>
                     <div class="behind-line-pos">
@@ -117,6 +117,83 @@
         </div>
     </section>
 
+    <section class="focus" data-scrollTo="focus">
+        <div class="focus-container">
+            <div class="numberPos numberTwo">
+                <p class="secNumber">02</p>
+            </div>
+            <div class="focus-inner tx-center">
+                <h2 class="focus-title">Our Focus.</h2>
+                <p class="focus-text">We understand your requirement and provide quality works.</p>
+                <div class="focus-table">
+                    <div class="focus-table-items">
+                        <div class="focus-table-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="40px">
+                                <path fill-rule="evenodd" fill="rgb(252, 95, 69)"
+                                      d="M47.266,39.279 L-0.000,39.279 L-0.000,8.332 L47.266,8.332 L47.266,39.279 ZM45.547,10.051 L1.719,10.051 L1.719,37.560 L45.547,37.560 L45.547,10.051 ZM9.453,6.612 L7.734,6.612 L7.734,0.596 L55.000,0.596 L55.000,31.542 L48.984,31.542 L48.984,29.823 L53.281,29.823 L53.281,2.315 L9.453,2.315 L9.453,6.612 ZM42.969,21.227 L35.234,21.227 L35.234,12.630 L42.969,12.630 L42.969,21.227 ZM41.250,14.349 L36.953,14.349 L36.953,19.507 L41.250,19.507 L41.250,14.349 ZM27.500,34.981 L29.219,34.981 L29.219,12.630 L27.500,12.630 L27.500,34.981 ZM4.297,16.068 L24.922,16.068 L24.922,14.349 L4.297,14.349 L4.297,16.068 ZM4.297,20.367 L22.344,20.367 L22.344,18.648 L4.297,18.648 L4.297,20.367 ZM4.297,24.666 L23.203,24.666 L23.203,22.946 L4.297,22.946 L4.297,24.666 Z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="focus-table-title tx-center">Web Design</h4>
+                        <p class="focus-table-text tx-center">
+                            Analytics release series A financing launch party
+                            interaction design android angel investor
+                        </p>
+                        <div class="behind-line-pos">
+                            <div class="behind-line-items bg-red"></div>
+                        </div>
+                    </div>
+                    <div class="focus-table-items">
+                        <div class="focus-table-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="49px">
+                                <path fill-rule="evenodd" fill="rgb(56, 198, 149)"
+                                      d="M36.094,7.207 L55.000,0.007 L55.000,41.486 L36.094,48.685 L18.906,41.808 L-0.000,49.008 L-0.000,7.529 L18.906,0.330 L36.094,7.207 ZM19.766,40.304 L35.234,46.428 L35.234,8.711 L19.766,2.587 L19.766,40.304 ZM1.719,46.428 L18.047,40.196 L18.047,2.587 L1.719,8.819 L1.719,46.428 ZM53.281,2.587 L36.953,8.819 L36.953,46.428 L53.281,40.196 L53.281,2.587 Z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="focus-table-title tx-center">UX Design</h4>
+                        <p class="focus-table-text tx-center">
+                            Analytics release series A financing launch party
+                            interaction design android angel investor
+                        </p>
+                        <div class="behind-line-pos">
+                            <div class="behind-line-items bg-green"></div>
+                        </div>
+                    </div>
+                    <div class="focus-table-items">
+                        <div class="focus-table-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="43px">
+                                <path fill-rule="evenodd" fill="rgb(178, 124, 245)"
+                                      d="M46.406,42.999 L-0.000,42.999 L-0.000,6.893 L46.406,6.893 L46.406,42.999 ZM1.719,8.612 L1.719,31.501 L12.891,20.218 L25.137,34.187 L33.623,29.030 L44.687,38.593 L44.687,8.612 L1.719,8.612 ZM44.687,41.279 L44.687,40.850 L33.408,31.178 L24.707,36.336 L12.891,22.797 L1.719,33.865 L1.719,41.279 L44.687,41.279 ZM7.734,0.016 L55.000,0.016 L55.000,36.122 L47.266,36.122 L47.266,34.402 L53.281,34.402 L53.281,1.735 L9.453,1.735 L9.453,6.034 L7.734,6.034 L7.734,0.016 ZM29.219,18.929 C29.219,17.496 29.719,16.279 30.723,15.275 C31.725,14.272 32.941,13.771 34.375,13.771 C35.807,13.771 37.024,14.272 38.027,15.275 C39.029,16.279 39.531,17.496 39.531,18.929 C39.531,20.362 39.029,21.580 38.027,22.582 C37.024,23.586 35.807,24.086 34.375,24.086 C32.941,24.086 31.725,23.586 30.723,22.582 C29.719,21.580 29.219,20.362 29.219,18.929 ZM30.937,18.929 C30.937,19.932 31.260,20.755 31.904,21.400 C32.549,22.045 33.371,22.367 34.375,22.367 C35.377,22.367 36.201,22.045 36.846,21.400 C37.490,20.755 37.812,19.932 37.812,18.929 C37.812,17.926 37.490,17.102 36.846,16.457 C36.201,15.812 35.377,15.490 34.375,15.490 C33.371,15.490 32.549,15.812 31.904,16.457 C31.260,17.102 30.937,17.926 30.937,18.929 Z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="focus-table-title tx-center">Photography</h4>
+                        <p class="focus-table-text tx-center">
+                            Analytics release series A financing launch party
+                            interaction design android angel investor
+                        </p>
+                        <div class="behind-line-pos">
+                            <div class="behind-line-items bg-purple"></div>
+                        </div>
+                    </div>
+                    <div class="focus-table-items">
+                        <div class="focus-table-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45px" height="41px">
+                                <path fill-rule="evenodd" fill="rgb(254, 185, 96)"
+                                      d="M28.534,40.016 L28.534,10.016 L44.466,10.016 L44.466,40.016 L28.534,40.016 ZM43.529,10.954 L29.471,10.954 L29.471,13.766 L43.529,13.766 L43.529,10.954 ZM43.529,14.704 L29.471,14.704 L29.471,33.454 L43.529,33.454 L43.529,14.704 ZM43.529,34.391 L29.471,34.391 L29.471,39.079 L43.529,39.079 L43.529,34.391 ZM36.500,35.328 C36.890,35.328 37.222,35.466 37.496,35.739 C37.769,36.013 37.906,36.345 37.906,36.735 C37.906,37.126 37.769,37.458 37.496,37.731 C37.222,38.005 36.890,38.141 36.500,38.141 C36.109,38.141 35.777,38.005 35.504,37.731 C35.231,37.458 35.094,37.126 35.094,36.735 C35.094,36.345 35.231,36.013 35.504,35.739 C35.777,35.466 36.109,35.328 36.500,35.328 ZM36.500,37.204 C36.812,37.204 36.969,37.048 36.969,36.735 C36.969,36.423 36.812,36.266 36.500,36.266 C36.187,36.266 36.031,36.423 36.031,36.735 C36.031,37.048 36.187,37.204 36.500,37.204 ZM38.374,12.828 L34.626,12.828 L34.626,11.892 L38.374,11.892 L38.374,12.828 ZM0.755,0.016 L28.246,0.016 L28.246,40.016 L0.755,40.016 L0.755,0.016 ZM2.004,38.767 L26.996,38.767 L26.996,32.516 L2.004,32.516 L2.004,38.767 ZM2.004,31.267 L26.996,31.267 L26.996,6.266 L2.004,6.266 L2.004,31.267 ZM2.004,5.016 L26.996,5.016 L26.996,1.266 L2.004,1.266 L2.004,5.016 ZM12.001,2.516 L16.999,2.516 L16.999,3.766 L12.001,3.766 L12.001,2.516 ZM14.500,37.516 C13.979,37.516 13.536,37.334 13.172,36.969 C12.808,36.606 12.626,36.162 12.626,35.641 C12.626,35.121 12.808,34.678 13.172,34.313 C13.536,33.949 13.979,33.766 14.500,33.766 C15.020,33.766 15.463,33.949 15.828,34.313 C16.192,34.678 16.375,35.121 16.375,35.641 C16.375,36.162 16.192,36.606 15.828,36.969 C15.463,37.334 15.020,37.516 14.500,37.516 ZM14.500,35.017 C14.083,35.017 13.875,35.225 13.875,35.641 C13.875,36.059 14.083,36.266 14.500,36.266 C14.916,36.266 15.125,36.059 15.125,35.641 C15.125,35.225 14.916,35.017 14.500,35.017 Z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="focus-table-title tx-center">App Development</h4>
+                        <p class="focus-table-text tx-center">
+                            Analytics release series A financing launch party
+                            interaction design android angel investor
+                        </p>
+                        <div class="behind-line-pos">
+                            <div class="behind-line-items bg-orange"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 </body>
 </html>
