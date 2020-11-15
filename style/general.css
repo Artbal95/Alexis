@@ -60,13 +60,16 @@ button{
     padding: 4px;
     box-sizing: border-box;
     cursor: pointer;
-    transition: transform 100ms ease-in-out;
+    transition: all 150ms ease-in-out;
 }
 button:focus{
     outline: none;
 }
 button:active{
     transform: translateY(2px);
+}
+button:hover{
+    box-shadow: 0 0 20px 5px #cacaca4d;
 }
 input:focus{
     outline: none;
@@ -174,6 +177,17 @@ div[class$='-container']{
 .secNumber{
     color: #e0e0e0;
     font-size: 270px;
+}
+.button{
+    display: inline-block;
+    cursor: pointer;
+    transition: box-shadow 150ms ease-in-out;
+}
+.button:hover{
+    box-shadow: 0 0 20px 5px #cacaca4d;
+}
+.button:active{
+    transform: translateY(2px);
 }
 /* = = = = = = = = = = Global Style End = = = = = = = = = =*/
 

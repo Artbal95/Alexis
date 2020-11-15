@@ -175,8 +175,42 @@
 .focus-table-title {
     margin-bottom: 25px;
 }
-
 /* = = = = = = = = = = Section Focus End = = = = = = = = = =*/
+
+/* = = = = = = = = = = Section Video Start = = = = = = = = = =*/
+.video-container{
+    background-image: url("../images/video/video.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.video-inner{
+    position: relative;
+    z-index: 2;
+    padding: 90px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.video-title{
+    font-weight: 700;
+    color: white;
+    margin-bottom: 50px;
+}
+.video-icon{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 50px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-text{
+    color: white;
+}
+/* = = = = = = = = = = Section Video End = = = = = = = = = =*/
+
 
 
 /*Main Style End*/
