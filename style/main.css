@@ -13,6 +13,7 @@
 }
 .nav{
     width: 100%;
+    max-width: 1366px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,7 +24,7 @@
     font-size: 33px;
 }
 .nav-list a{
-    margin-right: 9px;
+    margin-right: 25px;
     font-weight: 500;
 }
 .nav-list a:last-child{
@@ -143,6 +144,7 @@
     position: relative;
     z-index: 2;
     padding: 130px 90px;
+    box-sizing: border-box;
 }
 .focus-title {
     margin-bottom: 20px;
@@ -151,6 +153,9 @@
     margin-bottom: 80px;
 }
 .focus-table {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -185,6 +190,7 @@
     position: relative;
     z-index: 2;
     padding: 90px 0;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -217,6 +223,7 @@
     position: relative;
     z-index: 2;
     padding: 130px 90px;
+    box-sizing: border-box;
 }
 .portfolio-title{
     margin-bottom: 20px;
@@ -225,6 +232,9 @@
     margin-bottom: 80px;
 }
 .portfolio-table{
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
