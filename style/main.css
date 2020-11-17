@@ -13,6 +13,7 @@
 }
 .nav{
     width: 100%;
+    max-width: 1366px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,7 +24,7 @@
     font-size: 33px;
 }
 .nav-list a{
-    margin-right: 9px;
+    margin-right: 25px;
     font-weight: 500;
 }
 .nav-list a:last-child{
@@ -88,7 +89,7 @@
 
 /* = = = = = = = = = = Section About Start = = = = = = = = = =*/
 .about-container{
-    height: 1000px;
+    min-height: 1000px;
 }
 .about-inner{
     position: absolute;
@@ -117,9 +118,9 @@
     padding: 80px;
     box-sizing: border-box;
 }
-.one{
-    top: 0;
-    left: 0;
+.numberOne{
+    top: 105px;
+    left: 115px;
 }
 .about-info{
     position: relative;
@@ -127,9 +128,191 @@
 }
 .about-title{
     margin-bottom: 50px;
-    font-weight: 700;
 }
 /* = = = = = = = = = = Section About End = = = = = = = = = =*/
+
+/* = = = = = = = = = = Section Focus Start = = = = = = = = = =*/
+.focus-container {
+    background-color: rgba(0, 0, 0, .05);
+}
+.numberTwo {
+    top: -95px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.focus-inner {
+    position: relative;
+    z-index: 2;
+    padding: 130px 90px;
+    box-sizing: border-box;
+}
+.focus-title {
+    margin-bottom: 20px;
+}
+.focus-text {
+    margin-bottom: 80px;
+}
+.focus-table {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.focus-table-items {
+    position: relative;
+    width: 190px;
+    height: 240px;
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.focus-table-icon {
+    margin-bottom: 25px;
+}
+.focus-table-title {
+    margin-bottom: 25px;
+}
+/* = = = = = = = = = = Section Focus End = = = = = = = = = =*/
+
+/* = = = = = = = = = = Section Video Start = = = = = = = = = =*/
+.video-container{
+    background-image: url("../images/video/video.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.video-inner{
+    position: relative;
+    z-index: 2;
+    padding: 90px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.video-title{
+    color: white;
+    margin-bottom: 50px;
+}
+.video-icon{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 50px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-text{
+    color: white;
+}
+/* = = = = = = = = = = Section Video End = = = = = = = = = =*/
+
+/* = = = = = = = = = = Section Portfolio Start = = = = = = = = = =*/
+.numberThree{
+    top: 115px;
+    left: 50%;
+}
+.portfolio-inner{
+    position: relative;
+    z-index: 2;
+    padding: 130px 90px;
+    box-sizing: border-box;
+}
+.portfolio-title{
+    margin-bottom: 20px;
+}
+.portfolio-text{
+    margin-bottom: 80px;
+}
+.portfolio-table{
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.portfolio-table-items{
+    width: 30%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+.portfolio-table-info{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    transition: top .5s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio-table-items:hover .portfolio-table-info{
+    top: 0;
+}
+.portfolio-table-info-top{
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+.portfolio-table-info-plus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    transition: box-shadow 150ms ease-in-out;
+}
+.plus-circle{
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 100%;
+    transition: box-shadow 150ms ease-in-out;
+}
+.portfolio-table-info-plus:hover{
+    box-shadow: 0 0 20px 5px #cacaca4d;
+}
+.line-horizontal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 2px;
+    background-color: white;
+}
+.line-vertical {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 80%;
+    background-color: white;
+}
+.portfolio-table-info-bottom {
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* = = = = = = = = = = Section Portfolio End = = = = = = = = = =*/
+
+
 
 
 /*Main Style End*/
