@@ -82,6 +82,9 @@ img{
 /* = = = = = = = = = = Global Text, Buttons, a link and inputs Style End = = = = = = = = = =*/
 
 /* = = = = = = = = = = Global Color CSS Start = = = = = = = = = =*/
+[class*='shadow']{
+    transition: box-shadow 350ms ease-out;
+}
 .cl-logo{
     color: #fc5f45;
 }
@@ -103,6 +106,9 @@ img{
 .lg-green{
     background: linear-gradient(to top, #38c695 -30%, transparent 70%);
 }
+.shadow-green:hover{
+    box-shadow: 0 0 20px 5px #38c695;
+}
 .cl-red{
     color: #fc5f45;
 }
@@ -111,6 +117,9 @@ img{
 }
 .lg-red{
     background: linear-gradient(to top, #fc5f45 -30%, transparent 70%);
+}
+.shadow-red:hover{
+    box-shadow: 0 0 20px 5px #fc5f45;
 }
 .cl-purple{
     color: #b27cf5;
@@ -121,6 +130,9 @@ img{
 .lg-purple{
     background: linear-gradient(to top, #b27cf5 -30%, transparent 70%);
 }
+.shadow-purple:hover{
+    box-shadow: 0 0 20px 5px #b27cf5;
+}
 .cl-orange{
     color: #feb960;
 }
@@ -130,6 +142,10 @@ img{
 .lg-orange{
     background: linear-gradient(to top, #feb960 -30%, transparent 70%);
 }
+.shadow-orange:hover{
+    box-shadow: 0 0 20px 5px #feb960;
+}
+
 /* = = = = = = = = = = Global Color CSS End = = = = = = = = = =*/
 
 /* = = = = = = = = = = Global Style Start = = = = = = = = = =*/

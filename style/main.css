@@ -1,5 +1,5 @@
 /*Nav Style Start*/
-.header-container{
+.header-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -11,41 +11,47 @@
     align-items: center;
     justify-content: center;
 }
-.nav{
+
+.nav {
     width: 100%;
     max-width: 1366px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.nav-logo{
+
+.nav-logo {
     font-family: 'Conv_Wisdom Script AJ', sans-serif;
     font-weight: normal;
     font-size: 33px;
 }
-.nav-list a{
+
+.nav-list a {
     margin-right: 25px;
     font-weight: 500;
 }
-.nav-list a:last-child{
+
+.nav-list a:last-child {
     margin: 0;
 }
+
 /*Nav Style End*/
 
 /*Main Style Start*/
 
-.main-container{
+.main-container {
     padding-top: 55px;
 }
 
 /* = = = = = = = = = = Section Home Start = = = = = = = = = =*/
-.home-container{
+.home-container {
     height: 850px;
     background-image: url("../images/home/home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.home-inner{
+
+.home-inner {
     width: 830px;
     position: absolute;
     top: 50%;
@@ -53,45 +59,55 @@
     transform: translate(-50%, -50%);
     z-index: 2;
 }
-.home-title{
+
+.home-title {
     text-align: center;
     color: white;
     margin-bottom: 50px;
 }
-.home-btn{
+
+.home-btn {
     text-align: center;
     margin-bottom: 90px;
 }
-.home-btn button:first-child{
+
+.home-btn button:first-child {
     margin-right: 25px;
 }
-.home-btn button{
+
+.home-btn button {
     font-size: 16px;
     width: 180px;
     padding: 12px 0;
     border-radius: 25px;
 }
-.home-icon{
+
+.home-icon {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.home-icon-items{
+
+.home-icon-items {
     text-align: center;
 }
-.home-icon-items svg{
+
+.home-icon-items svg {
     margin-bottom: 36px;
 }
-.home-icon-items p{
+
+.home-icon-items p {
     font-size: 18px;
 }
+
 /* = = = = = = = = = = Section Home End = = = = = = = = = =*/
 
 /* = = = = = = = = = = Section About Start = = = = = = = = = =*/
-.about-container{
+.about-container {
     min-height: 1000px;
 }
-.about-inner{
+
+.about-inner {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -99,17 +115,20 @@
     display: flex;
     align-items: center;
 }
-.about-image{
+
+.about-image {
     width: 555px;
     height: 700px;
     position: relative;
 }
-.about-line-bg{
+
+.about-line-bg {
     z-index: 2;
     border: 10px solid rgba(0, 0, 0, .3);
     box-sizing: border-box;
 }
-.about-information{
+
+.about-information {
     width: 650px;
     background-color: white;
     position: relative;
@@ -118,40 +137,49 @@
     padding: 80px;
     box-sizing: border-box;
 }
-.numberOne{
+
+.numberOne {
     top: 105px;
     left: 115px;
 }
-.about-info{
+
+.about-info {
     position: relative;
     z-index: 2;
 }
-.about-title{
+
+.about-title {
     margin-bottom: 50px;
 }
+
 /* = = = = = = = = = = Section About End = = = = = = = = = =*/
 
 /* = = = = = = = = = = Section Focus Start = = = = = = = = = =*/
 .focus-container {
-    background-color: rgba(0, 0, 0, .05);
+    background-color: #ececec;
 }
+
 .numberTwo {
     top: -95px;
     left: 50%;
     transform: translateX(-50%);
 }
+
 .focus-inner {
     position: relative;
     z-index: 2;
     padding: 130px 90px;
     box-sizing: border-box;
 }
+
 .focus-title {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
+
 .focus-text {
     margin-bottom: 80px;
 }
+
 .focus-table {
     width: 100%;
     max-width: 1366px;
@@ -161,46 +189,55 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .focus-table-items {
     position: relative;
-    width: 190px;
-    height: 240px;
+    width: 263px;
+    height: 350px;
+    margin-bottom: 50px;
     background-color: white;
     padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.focus-table-icon {
-    margin-bottom: 25px;
-}
-.focus-table-title {
-    margin-bottom: 25px;
-}
-/* = = = = = = = = = = Section Focus End = = = = = = = = = =*/
-
-/* = = = = = = = = = = Section Video Start = = = = = = = = = =*/
-.video-container{
-    background-image: url("../images/video/video.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.video-inner{
-    position: relative;
-    z-index: 2;
-    padding: 90px 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.video-title{
+
+.focus-table-icon {
+    margin-bottom: 35px;
+}
+
+.focus-table-title {
+    margin-bottom: 35px;
+}
+
+/* = = = = = = = = = = Section Focus End = = = = = = = = = =*/
+
+/* = = = = = = = = = = Section Video Start = = = = = = = = = =*/
+.video-container {
+    background-image: url("../images/video/video.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video-inner {
+    position: relative;
+    z-index: 2;
+    padding: 130px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-title {
     color: white;
     margin-bottom: 50px;
 }
-.video-icon{
+
+.video-icon {
     width: 80px;
     height: 80px;
     margin-bottom: 50px;
@@ -209,29 +246,35 @@
     align-items: center;
     justify-content: center;
 }
-.video-text{
+
+.video-text {
     color: white;
 }
+
 /* = = = = = = = = = = Section Video End = = = = = = = = = =*/
 
 /* = = = = = = = = = = Section Portfolio Start = = = = = = = = = =*/
-.numberThree{
+.numberThree {
     top: 115px;
     left: 50%;
 }
-.portfolio-inner{
+
+.portfolio-inner {
     position: relative;
     z-index: 2;
     padding: 130px 90px;
     box-sizing: border-box;
 }
-.portfolio-title{
-    margin-bottom: 20px;
+
+.portfolio-title {
+    margin-bottom: 40px;
 }
-.portfolio-text{
+
+.portfolio-text {
     margin-bottom: 80px;
 }
-.portfolio-table{
+
+.portfolio-table {
     width: 100%;
     max-width: 1366px;
     margin: 0 auto;
@@ -240,13 +283,15 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.portfolio-table-items{
+
+.portfolio-table-items {
     width: 30%;
     overflow: hidden;
     position: relative;
     margin-bottom: 20px;
 }
-.portfolio-table-info{
+
+.portfolio-table-info {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -258,14 +303,17 @@
     align-items: center;
     justify-content: center;
 }
-.portfolio-table-items:hover .portfolio-table-info{
+
+.portfolio-table-items:hover .portfolio-table-info {
     top: 0;
 }
-.portfolio-table-info-top{
+
+.portfolio-table-info-top {
     width: 100%;
     height: 80%;
     position: relative;
 }
+
 .portfolio-table-info-plus {
     position: absolute;
     top: 50%;
@@ -274,16 +322,19 @@
     border-radius: 100%;
     transition: box-shadow 150ms ease-in-out;
 }
-.plus-circle{
+
+.plus-circle {
     width: 50px;
     height: 50px;
     border: 2px solid white;
     border-radius: 100%;
     transition: box-shadow 150ms ease-in-out;
 }
-.portfolio-table-info-plus:hover{
+
+.portfolio-table-info-plus:hover {
     box-shadow: 0 0 20px 5px #cacaca4d;
 }
+
 .line-horizontal {
     position: absolute;
     top: 50%;
@@ -293,6 +344,7 @@
     height: 2px;
     background-color: white;
 }
+
 .line-vertical {
     position: absolute;
     top: 50%;
@@ -302,6 +354,7 @@
     height: 80%;
     background-color: white;
 }
+
 .portfolio-table-info-bottom {
     width: 100%;
     height: 20%;
@@ -310,9 +363,180 @@
     align-items: center;
     justify-content: center;
 }
+
+.portfolio-table-info-bottom-text {
+    font-weight: 500;
+    font-size: 18px;
+}
+
 /* = = = = = = = = = = Section Portfolio End = = = = = = = = = =*/
 
+/* = = = = = = = = = = Section Team Start = = = = = = = = = =*/
+.team-container {
+    background-color: #ececec;
+}
+.team-inner {
+    position: relative;
+    z-index: 2;
+    padding: 130px 90px;
+}
 
+.numberFour {
+    top: 115px;
+    left: 50%;
+}
+
+.team-title {
+    margin-bottom: 40px;
+}
+
+.team-text {
+    margin-bottom: 80px;
+}
+
+.team-table {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.team-table-card {
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team-table-card-item {
+    width: 263px;
+    height: 350px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.team-table-card-img {
+    position: relative;
+    width: 100%;
+    height: 80%;
+}
+
+.team-table-card-info {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-personal-name {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.team-personal-proff {
+    font-size: 14px;
+}
+
+.team-table-info {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    padding: 75px 100px;
+    box-sizing: border-box;
+}
+
+.team-table-info-item {
+    width: 100%;
+    text-align: left;
+    position: absolute;
+}
+
+.team-table-info-arrow {
+    position: absolute;
+    top: 0;
+    left: 90px;
+    transform: translateY(-100%);
+    background-color: transparent;
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    border: 40px solid transparent;
+    border-bottom-color: white;
+}
+.team-table-info-title {
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
+.team-table-info-item-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-table-info-text {
+    width: 640px;
+    font-size: 15px;
+    line-height: 27px;
+}
+.team-table-info-right {
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team-table-vertical-line {
+    width: 2px;
+    height: 100%;
+    background-color: #cecece;
+}
+
+.team-table-info-soc {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.team-table-info-soc-item {
+    display: flex;
+    align-items: center;
+}
+
+.team-table-info-soc-item svg {
+    margin-right: 5px;
+}
+div#team-table-slide {
+    position: relative;
+    overflow: hidden;
+    height: 220px;
+}
+
+.person1 {
+    top: 0;
+    left: 0;
+}
+.person2 {
+    top: 0;
+    left: 100%;
+}
+.person3 {
+    top: 0;
+    left: 200%;
+}
+.person4 {
+    top: 0;
+    left: 300%;
+}
+
+/* = = = = = = = = = = Section Team End = = = = = = = = = =*/
 
 
 /*Main Style End*/
