@@ -11,7 +11,6 @@
     align-items: center;
     justify-content: center;
 }
-
 .nav {
     width: 100%;
     max-width: 1366px;
@@ -19,29 +18,25 @@
     align-items: center;
     justify-content: space-between;
 }
-
 .nav-logo {
     font-family: 'Conv_Wisdom Script AJ', sans-serif;
     font-weight: normal;
     font-size: 33px;
 }
-
 .nav-list a {
     margin-right: 25px;
     font-weight: 500;
 }
-
 .nav-list a:last-child {
     margin: 0;
 }
-
 /*Nav Style End*/
 
 /*Main Style Start*/
-
 .main-container {
     padding-top: 55px;
 }
+/*Main Style End*/
 
 /* = = = = = = = = = = Section Home Start = = = = = = = = = =*/
 .home-container {
@@ -50,7 +45,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .home-inner {
     width: 830px;
     position: absolute;
@@ -59,54 +53,44 @@
     transform: translate(-50%, -50%);
     z-index: 2;
 }
-
 .home-title {
     text-align: center;
     color: white;
     margin-bottom: 50px;
 }
-
 .home-btn {
     text-align: center;
     margin-bottom: 90px;
 }
-
 .home-btn button:first-child {
     margin-right: 25px;
 }
-
 .home-btn button {
     font-size: 16px;
     width: 180px;
     padding: 12px 0;
     border-radius: 25px;
 }
-
 .home-icon {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .home-icon-items {
     text-align: center;
 }
-
 .home-icon-items svg {
     margin-bottom: 36px;
 }
-
 .home-icon-items p {
     font-size: 18px;
 }
-
 /* = = = = = = = = = = Section Home End = = = = = = = = = =*/
 
 /* = = = = = = = = = = Section About Start = = = = = = = = = =*/
 .about-container {
     min-height: 1000px;
 }
-
 .about-inner {
     position: absolute;
     top: 50%;
@@ -115,19 +99,16 @@
     display: flex;
     align-items: center;
 }
-
 .about-image {
     width: 555px;
     height: 700px;
     position: relative;
 }
-
 .about-line-bg {
     z-index: 2;
     border: 10px solid rgba(0, 0, 0, .3);
     box-sizing: border-box;
 }
-
 .about-information {
     width: 650px;
     background-color: white;
@@ -137,49 +118,40 @@
     padding: 80px;
     box-sizing: border-box;
 }
-
 .numberOne {
     top: 105px;
     left: 115px;
 }
-
 .about-info {
     position: relative;
     z-index: 2;
 }
-
 .about-title {
     margin-bottom: 50px;
 }
-
 /* = = = = = = = = = = Section About End = = = = = = = = = =*/
 
 /* = = = = = = = = = = Section Focus Start = = = = = = = = = =*/
 .focus-container {
     background-color: #ececec;
 }
-
 .numberTwo {
     top: -95px;
     left: 50%;
     transform: translateX(-50%);
 }
-
 .focus-inner {
     position: relative;
     z-index: 2;
     padding: 130px 90px;
     box-sizing: border-box;
 }
-
 .focus-title {
     margin-bottom: 40px;
 }
-
 .focus-text {
     margin-bottom: 80px;
 }
-
 .focus-table {
     width: 100%;
     max-width: 1366px;
@@ -189,7 +161,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .focus-table-items {
     position: relative;
     width: 263px;
@@ -203,15 +174,12 @@
     align-items: center;
     justify-content: center;
 }
-
 .focus-table-icon {
     margin-bottom: 35px;
 }
-
 .focus-table-title {
     margin-bottom: 35px;
 }
-
 /* = = = = = = = = = = Section Focus End = = = = = = = = = =*/
 
 /* = = = = = = = = = = Section Video Start = = = = = = = = = =*/
@@ -220,7 +188,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .video-inner {
     position: relative;
     z-index: 2;
@@ -231,12 +198,10 @@
     align-items: center;
     justify-content: center;
 }
-
 .video-title {
     color: white;
     margin-bottom: 50px;
 }
-
 .video-icon {
     width: 80px;
     height: 80px;
@@ -246,11 +211,9 @@
     align-items: center;
     justify-content: center;
 }
-
 .video-text {
     color: white;
 }
-
 /* = = = = = = = = = = Section Video End = = = = = = = = = =*/
 
 /* = = = = = = = = = = Section Portfolio Start = = = = = = = = = =*/
@@ -258,22 +221,18 @@
     top: 115px;
     left: 50%;
 }
-
 .portfolio-inner {
     position: relative;
     z-index: 2;
     padding: 130px 90px;
     box-sizing: border-box;
 }
-
 .portfolio-title {
     margin-bottom: 40px;
 }
-
 .portfolio-text {
     margin-bottom: 80px;
 }
-
 .portfolio-table {
     width: 100%;
     max-width: 1366px;
@@ -283,14 +242,12 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .portfolio-table-items {
     width: 30%;
     overflow: hidden;
     position: relative;
     margin-bottom: 20px;
 }
-
 .portfolio-table-info {
     position: absolute;
     width: 100%;
@@ -303,17 +260,14 @@
     align-items: center;
     justify-content: center;
 }
-
 .portfolio-table-items:hover .portfolio-table-info {
     top: 0;
 }
-
 .portfolio-table-info-top {
     width: 100%;
     height: 80%;
     position: relative;
 }
-
 .portfolio-table-info-plus {
     position: absolute;
     top: 50%;
@@ -322,7 +276,6 @@
     border-radius: 100%;
     transition: box-shadow 150ms ease-in-out;
 }
-
 .plus-circle {
     width: 50px;
     height: 50px;
@@ -330,11 +283,9 @@
     border-radius: 100%;
     transition: box-shadow 150ms ease-in-out;
 }
-
 .portfolio-table-info-plus:hover {
     box-shadow: 0 0 20px 5px #cacaca4d;
 }
-
 .line-horizontal {
     position: absolute;
     top: 50%;
@@ -344,7 +295,6 @@
     height: 2px;
     background-color: white;
 }
-
 .line-vertical {
     position: absolute;
     top: 50%;
@@ -354,7 +304,6 @@
     height: 80%;
     background-color: white;
 }
-
 .portfolio-table-info-bottom {
     width: 100%;
     height: 20%;
@@ -363,12 +312,10 @@
     align-items: center;
     justify-content: center;
 }
-
 .portfolio-table-info-bottom-text {
     font-weight: 500;
     font-size: 18px;
 }
-
 /* = = = = = = = = = = Section Portfolio End = = = = = = = = = =*/
 
 /* = = = = = = = = = = Section Team Start = = = = = = = = = =*/
@@ -380,26 +327,21 @@
     z-index: 2;
     padding: 130px 90px;
 }
-
 .numberFour {
     top: 115px;
     left: 50%;
 }
-
 .team-title {
     margin-bottom: 40px;
 }
-
 .team-text {
     margin-bottom: 80px;
 }
-
 .team-table {
     width: 100%;
     max-width: 1366px;
     margin: 0 auto;
 }
-
 .team-table-card {
     width: 100%;
     margin-bottom: 50px;
@@ -407,7 +349,6 @@
     align-items: center;
     justify-content: space-between;
 }
-
 .team-table-card-item {
     width: 263px;
     height: 350px;
@@ -421,13 +362,11 @@
     justify-content: space-between;
     cursor: pointer;
 }
-
 .team-table-card-img {
     position: relative;
     width: 100%;
     height: 80%;
 }
-
 .team-table-card-info {
     height: 20%;
     display: flex;
@@ -435,16 +374,13 @@
     align-items: center;
     justify-content: center;
 }
-
 .team-personal-name {
     font-weight: 500;
     font-size: 18px;
 }
-
 .team-personal-proff {
     font-size: 14px;
 }
-
 .team-table-info {
     position: relative;
     width: 100%;
@@ -452,13 +388,11 @@
     padding: 75px 100px;
     box-sizing: border-box;
 }
-
 .team-table-info-item {
     width: 100%;
     text-align: left;
     position: absolute;
 }
-
 .team-table-info-arrow {
     position: absolute;
     top: 0;
@@ -475,12 +409,10 @@
     font-weight: 500;
     margin-bottom: 35px;
 }
-
 .team-table-info-item-inner {
     display: flex;
     justify-content: space-between;
 }
-
 .team-table-info-text {
     width: 640px;
     font-size: 15px;
@@ -492,13 +424,11 @@
     align-items: center;
     justify-content: space-between;
 }
-
 .team-table-vertical-line {
     width: 2px;
     height: 100%;
     background-color: #cecece;
 }
-
 .team-table-info-soc {
     height: 100%;
     display: flex;
@@ -509,7 +439,6 @@
     display: flex;
     align-items: center;
 }
-
 .team-table-info-soc-item svg {
     margin-right: 5px;
 }
@@ -518,7 +447,6 @@ div#team-table-slide {
     overflow: hidden;
     height: 220px;
 }
-
 .person1 {
     top: 0;
     left: 0;
@@ -535,7 +463,6 @@ div#team-table-slide {
     top: 0;
     left: 300%;
 }
-
 /* = = = = = = = = = = Section Team End = = = = = = = = = =*/
 
 /* = = = = = = = = = = Section Options Start = = = = = = = = = =*/
@@ -575,7 +502,6 @@ div#team-table-slide {
     border-radius: 100%;
     background-color: transparent;
 }
-
 .options-items-circle {
     position: absolute;
     top: 50%;
@@ -599,5 +525,80 @@ div#team-table-slide {
 }
 /* = = = = = = = = = = Section Options End = = = = = = = = = =*/
 
+/* = = = = = = = = = = Section Work Steps Start = = = = = = = = = =*/
+.numberFive {
+    top: 115px;
+    left: 50%;
+}
+.work-inner {
+    position: relative;
+    z-index: 2;
+    padding: 130px 90px;
+}
+.work-title {
+    margin-bottom: 40px;
+}
+.work-text {
+    margin-bottom: 80px;
+}
+.work-table {
+    width: 556px;
+    margin: 0 auto;
+}
+.work-table-items {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.work-table-items-info {
+    width: 460px;
+    height: 300px;
+    position: absolute;
+    z-index: 3;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 30px 25px;
+    box-sizing: border-box;
+    text-align: left;
+}
+.work-table-items-info.left{
+    bottom: 50px;
+    right: 390px;
+}
+.work-table-items-info.right{
+    bottom: 50px;
+    left: 390px;
+}
+.workNumContainer {
+    width: 25%;
+}
+.workNumber {
+    font-family: 'Libre Baskerville', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: #e0e0e0;
+}
+.work-table-info-inner {
+    width: 75%;
+    align-self: center;
+}
+.work-number-line {
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: #e0e0e0;
+    transform: rotate(-45deg);
+    top: 75px;
+    left: 15px;
+}
+.work-table-info-title {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.work-table-info-text {
+    font-size: 15px;
+}
+/* = = = = = = = = = = Section Work Steps End = = = = = = = = = =*/
 
 /*Main Style End*/
