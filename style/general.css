@@ -60,7 +60,7 @@ button{
     padding: 4px;
     box-sizing: border-box;
     cursor: pointer;
-    transition: all 150ms ease-in-out;
+    transition: all 100ms ease-in-out;
 }
 button:focus{
     outline: none;
@@ -90,6 +90,9 @@ img{
 }
 .bg-bg-black{
     background-color: rgba(0,0,0,0.7);
+}
+.bg-tr{
+    background-color: transparent;
 }
 .cl-white{
     color: white;
@@ -182,6 +185,10 @@ h2[class$='-title']{
     height: 3px;
     display: flex;
     align-items: center;
+}
+.top-pos{
+    top: 0;
+    bottom: unset;
 }
 .behind-line-items{
     width: 100%;
