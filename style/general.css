@@ -158,6 +158,11 @@ div[class$='-container']{
     right: 0;
     bottom: 0;
 }
+div[class*='-line-bg']{
+    z-index: 2;
+    border: 10px solid rgba(0, 0, 0, .3);
+    box-sizing: border-box;
+}
 h2[class$='-title']{
     font-weight: 700;
 }
