@@ -846,66 +846,104 @@ div#team-table-slide {
 
 .testimonials-table {
     width: 100%;
-    max-width: 1080px;
-    height: 400px;
+    max-width: 1130px;
     margin: 0 auto;
+    height: 400px;
     position: relative;
+    overflow: hidden;
+}
+
+.testimonials-slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.testimonials-table-items-img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 384px;
+    height: 399px;
 }
 
 .testimonials-table-items {
     position: relative;
-    padding: 40px 40px 40px 360px;
+    height: 400px;
+}
+
+.testimonials-table-items-inner {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     background-color: white;
+    padding: 40px 40px 40px 430px;
+    text-align: left;
+}
+
+.testimonials-table-items-behind {
+    top: -90px;
+    left: 400px;
+}
+
+.testimonials-table-items-info {
+    position: relative;
+    z-index: 2;
+}
+
+.testimonials-table-items-text {
+    margin-bottom: 35px;
+}
+
+.testimonials-table-items-subscript {
+    font-family: 'Sacramento', sans-serif;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.testimonials-table-items-name {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.testimonials-table-radio-inner {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.testimonials-table-radio-round {
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    border: 1px solid;
+    border-radius: 100%;
+    position: relative;
+    margin-right: 10px;
+}
+
+.testimonials-table-radio-inner .testimonials-table-radio-round:last-child{
+    margin-right: 0;
+}
+
+.testimonials-br-red {
+    border-color: #fc5f45;
+}
+
+.testimonials-table-radio-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.testimonials-table-items-behind {
-    top: -85px;
-    left: 340px;
-    right: unset;
-    bottom: unset;
-}
-
-.testimonials-table-items-inner {
-    text-align: left;
-    position: relative;
-    z-index: 1;
-    box-sizing: border-box;
-}
-
-.testimonials-table-items-text {
-    font-size: 15px;
-    line-height: 27px;
-    margin-bottom: 15px;
-}
-
-.testimonials-table-items-subscript {
-    font-size: 40px;
-    font-weight: 400;
-    font-family: "Sacramento", sans-serif;
-}
-
-.testimonials-table-items-name {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-.testimonials-table-items-img {
-    position: absolute;
-    top: 50%;
-    left: -50px;
-    transform: translateY(-50%);
-    z-index: 3;
-    width: 384px;
-    height: 399px;
-}
-.testimonials-slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
 /* = = = = = = = = = = Section Testimonials End = = = = = = = = = =*/
 
 
