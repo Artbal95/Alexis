@@ -14,6 +14,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 *:focus{
     outline: none;
@@ -30,22 +31,22 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Libre Baskerville', serif;
     font-weight: 400;
 }
-h1{
+h1, .h1{
     font-size: 60px;
 }
-h2{
+h2, .h2{
     font-size: 50px;
 }
-h3{
+h3, .h3{
     font-size: 30px;
 }
-h4{
+h4, .h4{
     font-size: 20px;
 }
-h5{
+h5, .h5{
     font-size: 16px;
 }
-h6{
+h6, .h6{
     font-size: 12px;
 }
 a{
@@ -60,7 +61,7 @@ button{
     padding: 4px;
     box-sizing: border-box;
     cursor: pointer;
-    transition: all 150ms ease-in-out;
+    transition: all 100ms ease-in-out;
 }
 button:focus{
     outline: none;
@@ -82,11 +83,20 @@ img{
 /* = = = = = = = = = = Global Text, Buttons, a link and inputs Style End = = = = = = = = = =*/
 
 /* = = = = = = = = = = Global Color CSS Start = = = = = = = = = =*/
+[class*='shadow']{
+    transition: box-shadow 350ms ease-out;
+}
+tspan{
+    white-space: pre;
+}
 .cl-logo{
     color: #fc5f45;
 }
 .bg-bg-black{
     background-color: rgba(0,0,0,0.7);
+}
+.bg-tr{
+    background-color: transparent;
 }
 .cl-white{
     color: white;
@@ -103,6 +113,12 @@ img{
 .lg-green{
     background: linear-gradient(to top, #38c695 -30%, transparent 70%);
 }
+.shadow-green:hover{
+    box-shadow: 0 0 20px 5px #38c695;
+}
+.svg-green{
+    fill: #38c695;
+}
 .cl-red{
     color: #fc5f45;
 }
@@ -111,6 +127,12 @@ img{
 }
 .lg-red{
     background: linear-gradient(to top, #fc5f45 -30%, transparent 70%);
+}
+.shadow-red:hover{
+    box-shadow: 0 0 20px 5px #fc5f45;
+}
+.svg-red{
+    fill: #fc5f45;
 }
 .cl-purple{
     color: #b27cf5;
@@ -121,6 +143,12 @@ img{
 .lg-purple{
     background: linear-gradient(to top, #b27cf5 -30%, transparent 70%);
 }
+.shadow-purple:hover{
+    box-shadow: 0 0 20px 5px #b27cf5;
+}
+.svg-purple{
+    fill: #b27cf5;
+}
 .cl-orange{
     color: #feb960;
 }
@@ -129,6 +157,12 @@ img{
 }
 .lg-orange{
     background: linear-gradient(to top, #feb960 -30%, transparent 70%);
+}
+.shadow-orange:hover{
+    box-shadow: 0 0 20px 5px #feb960;
+}
+.svg-orange{
+    fill: #feb960;
 }
 /* = = = = = = = = = = Global Color CSS End = = = = = = = = = =*/
 
@@ -139,6 +173,11 @@ div[class$='-container']{
     left: 0;
     right: 0;
     bottom: 0;
+}
+div[class*='-line-bg']{
+    z-index: 2;
+    border: 10px solid rgba(0, 0, 0, .3);
+    box-sizing: border-box;
 }
 h2[class$='-title']{
     font-weight: 700;
@@ -167,6 +206,10 @@ h2[class$='-title']{
     height: 3px;
     display: flex;
     align-items: center;
+}
+.top-pos{
+    top: 0;
+    bottom: unset;
 }
 .behind-line-items{
     width: 100%;

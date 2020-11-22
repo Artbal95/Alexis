@@ -1,5 +1,5 @@
 /*Nav Style Start*/
-.header-container{
+.header-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -11,41 +11,48 @@
     align-items: center;
     justify-content: center;
 }
-.nav{
+
+.nav {
     width: 100%;
     max-width: 1366px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.nav-logo{
+
+.nav-logo {
     font-family: 'Conv_Wisdom Script AJ', sans-serif;
     font-weight: normal;
     font-size: 33px;
 }
-.nav-list a{
+
+.nav-list a {
     margin-right: 25px;
     font-weight: 500;
 }
-.nav-list a:last-child{
+
+.nav-list a:last-child {
     margin: 0;
 }
+
 /*Nav Style End*/
 
 /*Main Style Start*/
-
-.main-container{
+.main-container {
     padding-top: 55px;
 }
 
+/*Main Style End*/
+
 /* = = = = = = = = = = Section Home Start = = = = = = = = = =*/
-.home-container{
+.home-container {
     height: 850px;
     background-image: url("../images/home/home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.home-inner{
+
+.home-inner {
     width: 830px;
     position: absolute;
     top: 50%;
@@ -53,45 +60,55 @@
     transform: translate(-50%, -50%);
     z-index: 2;
 }
-.home-title{
+
+.home-title {
     text-align: center;
     color: white;
     margin-bottom: 50px;
 }
-.home-btn{
+
+.home-btn {
     text-align: center;
     margin-bottom: 90px;
 }
-.home-btn button:first-child{
+
+.home-btn button:first-child {
     margin-right: 25px;
 }
-.home-btn button{
+
+.home-btn button {
     font-size: 16px;
     width: 180px;
     padding: 12px 0;
     border-radius: 25px;
 }
-.home-icon{
+
+.home-icon {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.home-icon-items{
+
+.home-icon-items {
     text-align: center;
 }
-.home-icon-items svg{
+
+.home-icon-items svg {
     margin-bottom: 36px;
 }
-.home-icon-items p{
+
+.home-icon-items p {
     font-size: 18px;
 }
+
 /* = = = = = = = = = = Section Home End = = = = = = = = = =*/
 
 /* = = = = = = = = = = Section About Start = = = = = = = = = =*/
-.about-container{
+.about-container {
     min-height: 1000px;
 }
-.about-inner{
+
+.about-inner {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -99,17 +116,14 @@
     display: flex;
     align-items: center;
 }
-.about-image{
+
+.about-image {
     width: 555px;
     height: 700px;
     position: relative;
 }
-.about-line-bg{
-    z-index: 2;
-    border: 10px solid rgba(0, 0, 0, .3);
-    box-sizing: border-box;
-}
-.about-information{
+
+.about-information {
     width: 650px;
     background-color: white;
     position: relative;
@@ -118,40 +132,49 @@
     padding: 80px;
     box-sizing: border-box;
 }
-.numberOne{
+
+.numberOne {
     top: 105px;
     left: 115px;
 }
-.about-info{
+
+.about-info {
     position: relative;
     z-index: 2;
 }
-.about-title{
+
+.about-title {
     margin-bottom: 50px;
 }
+
 /* = = = = = = = = = = Section About End = = = = = = = = = =*/
 
 /* = = = = = = = = = = Section Focus Start = = = = = = = = = =*/
 .focus-container {
-    background-color: rgba(0, 0, 0, .05);
+    background-color: #ececec;
 }
+
 .numberTwo {
     top: -95px;
     left: 50%;
     transform: translateX(-50%);
 }
+
 .focus-inner {
     position: relative;
     z-index: 2;
     padding: 130px 90px;
     box-sizing: border-box;
 }
+
 .focus-title {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
+
 .focus-text {
     margin-bottom: 80px;
 }
+
 .focus-table {
     width: 100%;
     max-width: 1366px;
@@ -161,46 +184,55 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .focus-table-items {
     position: relative;
-    width: 190px;
-    height: 240px;
+    width: 263px;
+    height: 350px;
+    margin-bottom: 50px;
     background-color: white;
     padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.focus-table-icon {
-    margin-bottom: 25px;
-}
-.focus-table-title {
-    margin-bottom: 25px;
-}
-/* = = = = = = = = = = Section Focus End = = = = = = = = = =*/
-
-/* = = = = = = = = = = Section Video Start = = = = = = = = = =*/
-.video-container{
-    background-image: url("../images/video/video.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.video-inner{
-    position: relative;
-    z-index: 2;
-    padding: 90px 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.video-title{
+
+.focus-table-icon {
+    margin-bottom: 35px;
+}
+
+.focus-table-title {
+    margin-bottom: 35px;
+}
+
+/* = = = = = = = = = = Section Focus End = = = = = = = = = =*/
+
+/* = = = = = = = = = = Section Video Start = = = = = = = = = =*/
+.video-container {
+    background-image: url("../images/video/video.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video-inner {
+    position: relative;
+    z-index: 2;
+    padding: 130px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-title {
     color: white;
     margin-bottom: 50px;
 }
-.video-icon{
+
+.video-icon {
     width: 80px;
     height: 80px;
     margin-bottom: 50px;
@@ -209,29 +241,35 @@
     align-items: center;
     justify-content: center;
 }
-.video-text{
+
+.video-text {
     color: white;
 }
+
 /* = = = = = = = = = = Section Video End = = = = = = = = = =*/
 
 /* = = = = = = = = = = Section Portfolio Start = = = = = = = = = =*/
-.numberThree{
+.numberThree {
     top: 115px;
     left: 50%;
 }
-.portfolio-inner{
+
+.portfolio-inner {
     position: relative;
     z-index: 2;
     padding: 130px 90px;
     box-sizing: border-box;
 }
-.portfolio-title{
-    margin-bottom: 20px;
+
+.portfolio-title {
+    margin-bottom: 40px;
 }
-.portfolio-text{
+
+.portfolio-text {
     margin-bottom: 80px;
 }
-.portfolio-table{
+
+.portfolio-table {
     width: 100%;
     max-width: 1366px;
     margin: 0 auto;
@@ -240,13 +278,15 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.portfolio-table-items{
+
+.portfolio-table-items {
     width: 30%;
     overflow: hidden;
     position: relative;
     margin-bottom: 20px;
 }
-.portfolio-table-info{
+
+.portfolio-table-info {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -258,14 +298,17 @@
     align-items: center;
     justify-content: center;
 }
-.portfolio-table-items:hover .portfolio-table-info{
+
+.portfolio-table-items:hover .portfolio-table-info {
     top: 0;
 }
-.portfolio-table-info-top{
+
+.portfolio-table-info-top {
     width: 100%;
     height: 80%;
     position: relative;
 }
+
 .portfolio-table-info-plus {
     position: absolute;
     top: 50%;
@@ -274,16 +317,19 @@
     border-radius: 100%;
     transition: box-shadow 150ms ease-in-out;
 }
-.plus-circle{
+
+.plus-circle {
     width: 50px;
     height: 50px;
     border: 2px solid white;
     border-radius: 100%;
     transition: box-shadow 150ms ease-in-out;
 }
-.portfolio-table-info-plus:hover{
+
+.portfolio-table-info-plus:hover {
     box-shadow: 0 0 20px 5px #cacaca4d;
 }
+
 .line-horizontal {
     position: absolute;
     top: 50%;
@@ -293,6 +339,7 @@
     height: 2px;
     background-color: white;
 }
+
 .line-vertical {
     position: absolute;
     top: 50%;
@@ -302,6 +349,7 @@
     height: 80%;
     background-color: white;
 }
+
 .portfolio-table-info-bottom {
     width: 100%;
     height: 20%;
@@ -310,9 +358,800 @@
     align-items: center;
     justify-content: center;
 }
+
+.portfolio-table-info-bottom-text {
+    font-weight: 500;
+    font-size: 18px;
+}
+
 /* = = = = = = = = = = Section Portfolio End = = = = = = = = = =*/
 
+/* = = = = = = = = = = Section Team Start = = = = = = = = = =*/
+.team-container {
+    background-color: #ececec;
+}
 
+.team-inner {
+    position: relative;
+    z-index: 2;
+    padding: 130px 90px;
+}
 
+.numberFour {
+    top: 115px;
+    left: 50%;
+}
+
+.team-title {
+    margin-bottom: 40px;
+}
+
+.team-text {
+    margin-bottom: 80px;
+}
+
+.team-table {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.team-table-card {
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team-table-card-item {
+    width: 263px;
+    height: 350px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.team-table-card-img {
+    position: relative;
+    width: 100%;
+    height: 80%;
+}
+
+.team-table-card-info {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-personal-name {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.team-personal-proff {
+    font-size: 14px;
+}
+
+.team-table-info {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    padding: 75px 100px;
+    box-sizing: border-box;
+}
+
+.team-table-info-item {
+    width: 100%;
+    text-align: left;
+    position: absolute;
+}
+
+.team-table-info-arrow {
+    position: absolute;
+    top: 0;
+    left: 90px;
+    transform: translateY(-100%);
+    background-color: transparent;
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    border: 40px solid transparent;
+    border-bottom-color: white;
+}
+
+.team-table-info-title {
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
+.team-table-info-item-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-table-info-text {
+    width: 640px;
+    font-size: 15px;
+    line-height: 27px;
+}
+
+.team-table-info-right {
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team-table-vertical-line {
+    width: 2px;
+    height: 100%;
+    background-color: #cecece;
+}
+
+.team-table-info-soc {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.team-table-info-soc-item {
+    display: flex;
+    align-items: center;
+}
+
+.team-table-info-soc-item svg {
+    margin-right: 5px;
+}
+
+div#team-table-slide {
+    position: relative;
+    overflow: hidden;
+    height: 220px;
+}
+
+.person1 {
+    top: 0;
+    left: 0;
+}
+
+.person2 {
+    top: 0;
+    left: 100%;
+}
+
+.person3 {
+    top: 0;
+    left: 200%;
+}
+
+.person4 {
+    top: 0;
+    left: 300%;
+}
+
+/* = = = = = = = = = = Section Team End = = = = = = = = = =*/
+
+/* = = = = = = = = = = Section Options Start = = = = = = = = = =*/
+.options-container {
+    min-height: 464px;
+    position: relative;
+    background-image: url("../images/options/options.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options-inner {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options-items {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options-items-value {
+    font-weight: 500;
+}
+
+.options-items-border {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border: 2px solid;
+    box-sizing: border-box;
+    border-radius: 100%;
+    background-color: transparent;
+}
+
+.options-items-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+}
+
+.options-br-green {
+    border-color: #38c695;
+}
+
+.options-br-red {
+    border-color: #fc5f45;
+}
+
+.options-br-purple {
+    border-color: #b27cf5;
+}
+
+.options-br-orange {
+    border-color: #feb960;
+}
+
+/* = = = = = = = = = = Section Options End = = = = = = = = = =*/
+
+/* = = = = = = = = = = Section Work Steps Start = = = = = = = = = =*/
+.numberFive {
+    top: 115px;
+    left: 50%;
+}
+
+.work-inner {
+    position: relative;
+    z-index: 2;
+    padding: 130px 90px;
+}
+
+.work-title {
+    margin-bottom: 40px;
+}
+
+.work-text {
+    margin-bottom: 80px;
+}
+
+.work-table {
+    width: 556px;
+    margin: 0 auto;
+}
+
+.work-table-items {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.work-table-items-info {
+    width: 460px;
+    height: 300px;
+    position: absolute;
+    z-index: 3;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 30px 25px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.work-table-items-info.left {
+    bottom: 50px;
+    right: 390px;
+}
+
+.work-table-items-info.right {
+    bottom: 50px;
+    left: 390px;
+}
+
+.workNumContainer {
+    width: 25%;
+}
+
+.workNumber {
+    font-family: 'Libre Baskerville', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: #e0e0e0;
+}
+
+.work-table-info-inner {
+    width: 75%;
+    align-self: center;
+}
+
+.work-number-line {
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: #e0e0e0;
+    transform: rotate(-45deg);
+    top: 75px;
+    left: 15px;
+}
+
+.work-table-info-title {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.work-table-info-text {
+    font-size: 15px;
+}
+
+/* = = = = = = = = = = Section Work Steps End = = = = = = = = = =*/
+
+/* = = = = = = = = = = Section Pricing Start = = = = = = = = = =*/
+.pricing-container {
+    background-color: #ececec;
+}
+
+.numberSix {
+    top: 115px;
+    left: 50%;
+}
+
+.pricing-inner {
+    position: relative;
+    z-index: 2;
+    padding: 130px 90px;
+}
+
+.pricing-title {
+    margin-bottom: 40px;
+}
+
+.pricing-text.tx-center {
+    margin-bottom: 80px;
+}
+
+.pricing-table {
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pricing-table-items {
+    position: relative;
+    padding: 35px 70px;
+    box-sizing: border-box;
+    width: 360px;
+    background-color: white;
+}
+
+.pricing-table-items-title {
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.pricing-table-items-round {
+    width: 110px;
+    height: 110px;
+    background-color: transparent;
+    position: relative;
+    border: 4px solid;
+    border-radius: 100%;
+    margin: 0 auto 40px;
+}
+
+.pricing-table-items-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-table-items-price {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.pricing-table-items-month {
+    font-size: 13px;
+}
+
+.pricing-br-green {
+    border-color: #38c695;
+}
+
+.pricing-br-red {
+    border-color: #fc5f45;
+}
+
+.pricing-br-purple {
+    border-color: #b27cf5;
+}
+
+.pricing-br-orange {
+    border-color: #feb960;
+}
+
+.pricing-table-items-text {
+    margin-bottom: 40px;
+}
+
+.pricing-table-items-text p {
+    line-height: 40px;
+}
+
+.pricing-table-items-btn button {
+    padding: 15px 35px;
+    border: 1px solid;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+/* = = = = = = = = = = Section Pricing End = = = = = = = = = =*/
+
+/* = = = = = = = = = = Section Testimonials Start = = = = = = = = = =*/
+.testimonials-container {
+    background-image: url("../images/testimonials/port03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 860px;
+}
+
+.numberSeven {
+    top: 115px;
+    left: 50%;
+}
+
+.num_07 {
+    color: #5d5d62;
+}
+
+.testimonials-inner {
+    position: relative;
+    z-index: 2;
+    padding: 130px 90px;
+}
+
+.testimonials-title {
+    margin-bottom: 40px;
+}
+
+.testimonials-text {
+    margin-bottom: 120px;
+}
+
+.testimonials-table {
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonials-slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.testimonials-table-items-img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 384px;
+    height: 399px;
+    border: 10px solid rgba(0, 0, 0, .2);
+    border-left-color: #464542;
+}
+
+.testimonials-table-items {
+    position: relative;
+    height: 400px;
+}
+
+.testimonials-table-items-inner {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 40px 40px 40px 440px;
+    text-align: left;
+}
+
+.testimonials-table-items-behind {
+    top: -90px;
+    left: 400px;
+}
+
+.testimonials-table-items-info {
+    position: relative;
+    z-index: 2;
+}
+
+.testimonials-table-items-text {
+    font-size: 15px;
+    line-height: 27px;
+    margin-bottom: 35px;
+}
+
+.testimonials-table-items-subscript {
+    font-family: 'Sacramento', sans-serif;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.testimonials-table-items-name {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.testimonials-table-radio-inner {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.testimonials-table-radio-round {
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    border: 1px solid;
+    border-radius: 100%;
+    position: relative;
+    margin-right: 10px;
+}
+
+.testimonials-table-radio-inner .testimonials-table-radio-round:last-child {
+    margin-right: 0;
+}
+
+.testimonials-br-red {
+    border-color: #fc5f45;
+}
+
+.testimonials-table-radio-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* = = = = = = = = = = Section Testimonials End = = = = = = = = = =*/
+
+/* = = = = = = = = = = Section Why Select Us Start = = = = = = = = = =*/
+.numberEight {
+    top: 115px;
+    left: 50%;
+}
+
+.select-inner {
+    position: relative;
+    z-index: 2;
+    padding: 130px 90px;
+}
+
+.select-title {
+    margin-bottom: 40px;
+}
+
+.select-text {
+    margin-bottom: 80px;
+}
+
+.select-table-items {
+    width: 335px;
+    text-align: left;
+    padding: 5px;
+    margin-bottom: 70px;
+}
+
+.select-table {
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.select-table-items-head {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 35px;
+}
+
+.select-table-items-icon {
+    margin-right: 15px;
+    padding-top: 6px;
+}
+
+.select-table-items-title {
+    font-weight: 500;
+}
+
+.select-start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-start button {
+    padding: 13px 38px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.select-start-title {
+    font-size: 25px;
+    margin-right: 25px;
+}
+
+/* = = = = = = = = = = Section Why Select Us End = = = = = = = = = =*/
+
+/* = = = = = = = = = = Section Our Blog Start = = = = = = = = = =*/
+
+.numberNine {
+    top: 115px;
+    left: 50%;
+}
+
+.blog-inner {
+    position: relative;
+    z-index: 2;
+    padding: 130px 90px;
+}
+
+.blog-title {
+    margin-bottom: 40px;
+}
+
+.blog-text {
+    margin-bottom: 80px;
+}
+
+.blog-table {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.blog-table-card-img {
+    position: relative;
+    width: 100%;
+    height: 443px;
+}
+
+.blog-table-head {
+    width: 555px;
+    background-color: white;
+}
+
+.blog-table-card-img-bg {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.blog-table-card-img-info {
+    position: absolute;
+    z-index: 3;
+    bottom: 35px;
+    left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.blog-table-card-img-name {
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.blog-table-card-img-date {
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.blog-table-card {
+    width: 100%;
+}
+
+.blog-table-card-info {
+    position: relative;
+    text-align: left;
+    padding: 30px 50px;
+}
+
+.blog-table-card-info-title {
+    line-height: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.blog-table-small {
+    width: 555px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-table-card-info-text {
+    line-height: 27px;
+}
+
+.blog-table-items {
+    position: relative;
+    text-align: left;
+    padding: 25px 35px;
+    background-color: white;
+}
+
+.blog-table-item-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.blog-table-item-name {
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.blog-table-item-date {
+    font-size: 13px;
+}
+
+.blog-table-item-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.blog-table-item-text {
+    font-size: 15px;
+    line-height: 27px;
+}
+
+.blog-container {
+    background-color: #ececec;
+}
+/* = = = = = = = = = = Section Our Blog End = = = = = = = = = =*/
 
 /*Main Style End*/
