@@ -867,8 +867,8 @@ div#team-table-slide {
     z-index: 2;
     width: 384px;
     height: 399px;
-    border: 10px solid;
-    border-color: rgba(0, 0, 0, .2);
+    border: 10px solid rgba(0, 0, 0, .2);
+    border-left-color: #464542;
 }
 
 .testimonials-table-items {
@@ -1018,7 +1018,140 @@ div#team-table-slide {
     font-size: 25px;
     margin-right: 25px;
 }
+
 /* = = = = = = = = = = Section Why Select Us End = = = = = = = = = =*/
 
+/* = = = = = = = = = = Section Our Blog Start = = = = = = = = = =*/
+
+.numberNine {
+    top: 115px;
+    left: 50%;
+}
+
+.blog-inner {
+    position: relative;
+    z-index: 2;
+    padding: 130px 90px;
+}
+
+.blog-title {
+    margin-bottom: 40px;
+}
+
+.blog-text {
+    margin-bottom: 80px;
+}
+
+.blog-table {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.blog-table-card-img {
+    position: relative;
+    width: 100%;
+    height: 443px;
+}
+
+.blog-table-head {
+    width: 555px;
+    background-color: white;
+}
+
+.blog-table-card-img-bg {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.blog-table-card-img-info {
+    position: absolute;
+    z-index: 3;
+    bottom: 35px;
+    left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.blog-table-card-img-name {
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.blog-table-card-img-date {
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.blog-table-card {
+    width: 100%;
+}
+
+.blog-table-card-info {
+    position: relative;
+    text-align: left;
+    padding: 30px 50px;
+}
+
+.blog-table-card-info-title {
+    line-height: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.blog-table-small {
+    width: 555px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-table-card-info-text {
+    line-height: 27px;
+}
+
+.blog-table-items {
+    position: relative;
+    text-align: left;
+    padding: 25px 35px;
+    background-color: white;
+}
+
+.blog-table-item-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.blog-table-item-name {
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.blog-table-item-date {
+    font-size: 13px;
+}
+
+.blog-table-item-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.blog-table-item-text {
+    font-size: 15px;
+    line-height: 27px;
+}
+
+.blog-container {
+    background-color: #ececec;
+}
+/* = = = = = = = = = = Section Our Blog End = = = = = = = = = =*/
 
 /*Main Style End*/
