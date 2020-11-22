@@ -86,6 +86,9 @@ img{
 [class*='shadow']{
     transition: box-shadow 350ms ease-out;
 }
+tspan{
+    white-space: pre;
+}
 .cl-logo{
     color: #fc5f45;
 }
@@ -113,6 +116,9 @@ img{
 .shadow-green:hover{
     box-shadow: 0 0 20px 5px #38c695;
 }
+.svg-green{
+    fill: #38c695;
+}
 .cl-red{
     color: #fc5f45;
 }
@@ -124,6 +130,9 @@ img{
 }
 .shadow-red:hover{
     box-shadow: 0 0 20px 5px #fc5f45;
+}
+.svg-red{
+    fill: #fc5f45;
 }
 .cl-purple{
     color: #b27cf5;
@@ -137,6 +146,9 @@ img{
 .shadow-purple:hover{
     box-shadow: 0 0 20px 5px #b27cf5;
 }
+.svg-purple{
+    fill: #b27cf5;
+}
 .cl-orange{
     color: #feb960;
 }
@@ -148,6 +160,9 @@ img{
 }
 .shadow-orange:hover{
     box-shadow: 0 0 20px 5px #feb960;
+}
+.svg-orange{
+    fill: #feb960;
 }
 /* = = = = = = = = = = Global Color CSS End = = = = = = = = = =*/
 

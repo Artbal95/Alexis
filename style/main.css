@@ -879,7 +879,7 @@ div#team-table-slide {
     top: 50%;
     transform: translateY(-50%);
     background-color: white;
-    padding: 40px 40px 40px 430px;
+    padding: 40px 40px 40px 440px;
     text-align: left;
 }
 
@@ -894,6 +894,8 @@ div#team-table-slide {
 }
 
 .testimonials-table-items-text {
+    font-size: 15px;
+    line-height: 27px;
     margin-bottom: 35px;
 }
 
@@ -926,7 +928,7 @@ div#team-table-slide {
     margin-right: 10px;
 }
 
-.testimonials-table-radio-inner .testimonials-table-radio-round:last-child{
+.testimonials-table-radio-inner .testimonials-table-radio-round:last-child {
     margin-right: 0;
 }
 
@@ -945,6 +947,76 @@ div#team-table-slide {
 }
 
 /* = = = = = = = = = = Section Testimonials End = = = = = = = = = =*/
+
+/* = = = = = = = = = = Section Why Select Us Start = = = = = = = = = =*/
+.numberEight {
+    top: 115px;
+    left: 50%;
+}
+
+.select-inner {
+    position: relative;
+    z-index: 2;
+    padding: 130px 90px;
+}
+
+.select-title {
+    margin-bottom: 40px;
+}
+
+.select-text {
+    margin-bottom: 80px;
+}
+
+.select-table-items {
+    width: 335px;
+    text-align: left;
+    padding: 5px;
+    margin-bottom: 70px;
+}
+
+.select-table {
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.select-table-items-head {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 35px;
+}
+
+.select-table-items-icon {
+    margin-right: 15px;
+    padding-top: 6px;
+}
+
+.select-table-items-title {
+    font-weight: 500;
+}
+
+.select-start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-start button {
+    padding: 13px 38px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.select-start-title {
+    font-size: 25px;
+    margin-right: 25px;
+}
+/* = = = = = = = = = = Section Why Select Us End = = = = = = = = = =*/
 
 
 /*Main Style End*/
