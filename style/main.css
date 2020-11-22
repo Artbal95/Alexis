@@ -40,6 +40,7 @@
 /*Main Style Start*/
 .main-container {
     padding-top: 55px;
+    position: relative;
 }
 
 /*Main Style End*/
@@ -1191,7 +1192,15 @@ div#team-table-slide {
 /* = = = = = = = = = = Section Subscribe End = = = = = = = = = =*/
 
 /* = = = = = = = = = = Section Get in Touch Start = = = = = = = = = =*/
-
+.numberTen{
+    top: 115px;
+    left: 50%;
+}
+.touch-container{
+    background-image: url("../images/touch/forest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /* = = = = = = = = = = Section Get in Touch End = = = = = = = = = =*/
 
 /*Main Style End*/

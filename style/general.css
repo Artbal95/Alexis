@@ -167,6 +167,9 @@ tspan{
 /* = = = = = = = = = = Global Color CSS End = = = = = = = = = =*/
 
 /* = = = = = = = = = = Global Style Start = = = = = = = = = =*/
+section:last-child div[class$='-container']{
+    padding-bottom: 350px;
+}
 div[class$='-container']{
     position: relative;
     top: 0;
