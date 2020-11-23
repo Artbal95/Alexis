@@ -104,6 +104,9 @@ tspan{
 .bg-white{
     background-color: white;
 }
+.svg-white{
+    fill: white;
+}
 .cl-green{
     color: #38c695;
 }
@@ -167,8 +170,8 @@ tspan{
 /* = = = = = = = = = = Global Color CSS End = = = = = = = = = =*/
 
 /* = = = = = = = = = = Global Style Start = = = = = = = = = =*/
-section:last-child div[class$='-container']{
-    padding-bottom: 350px;
+section:last-of-type div[class$='-container']{
+    padding-bottom: 360px;
 }
 div[class$='-container']{
     position: relative;
