@@ -14,35 +14,37 @@
     <!--    Css Style Start-->
     <link rel="stylesheet" href="style/general.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/animate.css">
     <!--    Css Style End-->
 </head>
 <body>
 
-<header class="header-container">
+<header id="header" class="header-container">
     <nav class="nav">
         <div class="nav-logo">
-            <a href="#" data-scroll="home">
+            <a data-scroll="home">
                 <p>
                     <span class="cl-logo">A</span>lexis
                 </p>
             </a>
         </div>
         <div class="nav-list">
-            <a href="#" data-scroll="about">About Us</a>
-            <a href="#" data-scroll="focus">Our Focus</a>
-            <a href="#" data-scroll="portfolio">Portfolio</a>
-            <a href="#" data-scroll="team">Our Team</a>
-            <a href="#" data-scroll="work">Work Steps</a>
-            <a href="#" data-scroll="pricing">Pricing</a>
-            <a href="#" data-scroll="testimonials">Testimonials</a>
-            <a href="#" data-scroll="blog">Blog</a>
-            <a href="#" data-scroll="touch">Contact</a>
+            <a data-scroll="about">About Us</a>
+            <a data-scroll="focus">Our Focus</a>
+            <a data-scroll="portfolio">Portfolio</a>
+            <a data-scroll="team">Our Team</a>
+            <a data-scroll="work">Work Steps</a>
+            <a data-scroll="pricing">Pricing</a>
+            <a data-scroll="testimonials">Testimonials</a>
+            <a data-scroll="blog">Blog</a>
+            <a data-scroll="touch">Contact</a>
         </div>
         <div class="nav-mobile" style="display: none">
         </div>
     </nav>
 </header>
-<main class="main-container">
+
+<main id="main" class="main-container">
 
     <section class="home" data-scrollTo="home">
         <div class="home-container">
@@ -1094,7 +1096,7 @@
         </div>
     </section>
 
-    <section class="select" data-scrollTo="select">
+    <section class="select">
         <div class="select-container">
             <div class="numberPos numberEight">
                 <div class="secNumber">08</div>
@@ -1524,5 +1526,19 @@
         </div>
     </div>
 </main>
+
+<div id="moda-video">
+    <div class="moda-video-container">
+        <div class="moda-video-close">
+            <div class="moda-video-vertical"></div>
+            <div class="moda-video-horizontal"></div>
+        </div>
+        <video src="video/advertising.mp4" controls></video>
+    </div>
+</div>
+
+<!-- Script Start-->
+<script src="js/app.js"></script>
+<!-- Script End-->
 </body>
 </html>

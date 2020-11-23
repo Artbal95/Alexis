@@ -1,0 +1,35 @@
+.header-animate-open{
+    position: fixed;
+    top: -60px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 5px 20px -5px black;
+    animation: header-open .4s ease-out both;
+}
+@keyframes header-open {
+    from {
+        top: -60px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+.header-animate-close{
+    position: fixed;
+    top: -60px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 5px 20px -5px black;
+    animation: header-close .2s ease-out both;
+}
+@keyframes header-close {
+    from {
+        top: 0;
+    }
+    to {
+        top: -60px;
+        position: absolute;
+    }
+}
+
