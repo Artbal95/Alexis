@@ -2,11 +2,11 @@ const navFixed = {
     headerDoc: document.getElementById('header'),
     init() {
         window.addEventListener('scroll', (e) => {
-            if (window.pageYOffset > 850) {
+            if (window.pageYOffset > 650) {
                 this.headerDoc.classList.add('header-animate-open')
             }
             if (this.headerDoc.classList.contains('header-animate-open')) {
-                if (window.pageYOffset < 800) {
+                if (window.pageYOffset < 600) {
                     this.headerDoc.classList.remove('header-animate-open');
                     this.headerDoc.classList.add('header-animate-close');
                     const time = setTimeout(() => {
@@ -20,10 +20,18 @@ const navFixed = {
 navFixed.init();
 
 const scroll = {
+    // Getting The html document
+    document: document.querySelector('html'),
+    // Getting Header Height
+    headHeight: +document.getElementById('header').clientHeight,
+    // Getting All a link on header
     navList: document.querySelectorAll('#header a'),
-    navName: [],
-    secList: document.querySelectorAll('#main section'),
-    secName: [],
+    // Getting All a scrolling name id
+    navName: [], // [about, focus,...]
+    // Getting All Sections
+    secList: document.querySelectorAll('section'),
+    // Getting All Section`s offsetTop who have scroll
+    secName: [], // [55, 905, ...]
     init() {
         this.NavNameList();
         this.SecOffsetList();
@@ -40,8 +48,7 @@ const scroll = {
         this.navName.forEach((name) => {
             this.secList.forEach((sec) => {
                 if (sec.dataset.scrollto === name) {
-                    console.log(sec.querySelector('div[class$="-container"]'))
-                    this.secName.push(sec.querySelector('div[class$="-container"]').offsetTop)
+                    this.secName.push(sec.offsetTop - this.headHeight)
                 }
             })
         })
@@ -50,19 +57,11 @@ const scroll = {
     clickNavList() {
         this.navList.forEach((nav, index) => {
             nav.addEventListener('click', (e) => {
-                if (nav.dataset.scroll === 'home') {
-                    window.scrollTo({
-                        top: 0,
-                        left: 0,
-                        behavior: "smooth"
-                    })
-                } else {
-                    window.scrollTo({
+                    this.document.scrollTo({
                         top: this.secName[index],
                         left: 0,
-                        behavior: "smooth"
+                        behavior: 'smooth'
                     })
-                }
             })
         })
     },
@@ -70,6 +69,3 @@ const scroll = {
 };
 scroll.init();
 
-const video = {
-
-}
