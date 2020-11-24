@@ -52,6 +52,7 @@ h6, .h6{
 a{
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 button{
     font-family: 'Poppins', sans-serif, serif;
@@ -103,6 +104,9 @@ tspan{
 }
 .bg-white{
     background-color: white;
+}
+.svg-white{
+    fill: white;
 }
 .cl-green{
     color: #38c695;
@@ -167,7 +171,10 @@ tspan{
 /* = = = = = = = = = = Global Color CSS End = = = = = = = = = =*/
 
 /* = = = = = = = = = = Global Style Start = = = = = = = = = =*/
-div[class$='-container']{
+section:last-of-type div[class$='-container']{
+    padding-bottom: 360px;
+}
+section div[class$='-container']{
     position: relative;
     top: 0;
     left: 0;
