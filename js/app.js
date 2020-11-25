@@ -1,27 +1,78 @@
-const navFixed = {
-    headerDoc: document.getElementById('header'),
-    init() {
+// Give me navBar container who have tags link with data-scroll attribute
+const header = document.getElementById('header')
+// Give me where you want to show the navbar(px), pl without px only number
+const navShow = 650
+
+// Give me containers where we must scrolling html with data-scrollTo attribute
+const contList = document.querySelectorAll('section[data-scrollTo]')
+
+
+// Show Navbar Object
+const showNavContainer = {
+    
+    // If we have any problems
+    error: null,
+    // Getting The html document
+    document: document.querySelector('html'),
+    // Getting Header Document
+    headerDoc(navContainer) {
+        // If there have a problem
+        if(navContainer){
+            return navContainer
+        }else{
+            this.error ? this.error = null : this.error = 'Error: We don`t have any navBar container'
+        }
+    },
+    // The Css Animate Name of Class (Open, Close)
+    open: 'header-animate-open',
+    close: 'header-animate-close',
+    // Checks the number
+    isInteger(num) {
+        return (num ^ 0) === num && num > 0;
+    },
+    // The Show pixels
+    navShow(num){
+        // If there have a problem
+        if(this.isInteger(num)){
+            return num
+        }else{
+            this.error ? this.error = null : this.error = 'Error: Please enter only a number'
+        }
+    },
+    // Create the Scrolling function
+    scrollFunc(html, navbar, open, close, pixels){
         window.addEventListener('scroll', (e) => {
-            if (window.pageYOffset > 650) {
-                this.headerDoc.classList.add('header-animate-open')
+            e.preventDefault()
+            if (html.scrollTop > pixels) {
+                navbar.classList.add(open)
             }
-            if (this.headerDoc.classList.contains('header-animate-open')) {
-                if (window.pageYOffset < 600) {
-                    this.headerDoc.classList.remove('header-animate-open');
-                    this.headerDoc.classList.add('header-animate-close');
+            if (navbar.classList.contains(open)) {
+                if (html.scrollTop < (+pixels - 50)) {
+                    navbar.classList.remove(open);
+                    navbar.classList.add(close);
                     const time = setTimeout(() => {
-                        this.headerDoc.classList.remove('header-animate-close')
+                        navbar.classList.remove(close)
+                        clearTimeout(time)
                     }, 300)
                 }
             }
         })
     },
+    init(navcontainer, number) {
+        const navbar = this.headerDoc(navcontainer)
+        const pixels = this.navShow(number)
+        if(this.error){
+            alert(this.error)
+        }else{
+            this.scrollFunc(this.document, navbar, this.open, this.close, pixels)
+        }
+    },
 };
-navFixed.init();
+showNavContainer.init(header, navShow);
 
 const scroll = {
     // Getting The html document
-    document: document.querySelector('html'),
+    document: document.querySelector('html, body'),
     // Getting Header Height
     headHeight: +document.getElementById('header').clientHeight,
     // Getting All a link on header
