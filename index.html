@@ -204,7 +204,7 @@
             <div class="pos-abs bg-bg-black"></div>
             <div class="video-inner tx-center">
                 <h3 class="video-title">Explore Our Awesomeness</h3>
-                <div class="video-icon button" id="video">
+                <div class="video-icon button" id="moda-video-open">
                     <svg xmlns="http://www.w3.org/2000/svg" width="80px" height="80px">
                         <path fill-rule="evenodd" fill="rgb(56, 198, 149)"
                               d="M34.687,25.312 L52.500,39.062 L52.500,40.937 L34.687,54.687 L32.500,53.750 L32.500,26.250 L34.687,25.312 ZM35.000,51.249 L49.219,39.999 L35.000,28.749 L35.000,51.249 ZM80.000,39.999 C80.000,51.042 76.094,60.468 68.281,68.281 C60.469,76.093 51.040,80.000 40.000,80.000 C28.957,80.000 19.531,76.093 11.719,68.281 C3.906,60.468 -0.000,51.042 -0.000,39.999 C-0.000,28.960 3.906,19.531 11.719,11.719 C19.531,3.906 28.957,-0.000 40.000,-0.000 C51.040,-0.000 60.469,3.906 68.281,11.719 C76.094,19.531 80.000,28.960 80.000,39.999 ZM77.500,39.999 C77.500,29.792 73.852,20.937 66.562,13.437 C59.062,6.147 50.207,2.500 40.000,2.500 C29.790,2.500 20.937,6.147 13.437,13.437 C6.145,20.937 2.500,29.792 2.500,39.999 C2.500,50.210 6.145,59.062 13.437,66.562 C20.937,73.854 29.790,77.500 40.000,77.500 C50.207,77.500 59.062,73.854 66.562,66.562 C73.852,59.062 77.500,50.210 77.500,39.999 Z"></path>
@@ -454,8 +454,8 @@
                 <h2 class="team-title">Our Team.</h2>
                 <p class="team-text">We understand your requirement and provide quality works.</p>
                 <div class="team-table">
-                    <div class="team-table-card">
-                        <div class="team-table-card-item shadow-red" data-infoCard="person1">
+                    <div id="team-table-card" class="team-table-card">
+                        <div class="team-table-card-item shadow-red" data-infoCard="person1" data-name="Michael">
                             <div class="team-table-card-img">
                                 <img src="./images/personal/person1.jpg" alt="Personal01">
                                 <div class="pos-abs lg-red"></div>
@@ -468,7 +468,7 @@
                                 <div class="behind-line-items bg-red"></div>
                             </div>
                         </div>
-                        <div class="team-table-card-item shadow-green" data-infoCard="person2">
+                        <div class="team-table-card-item shadow-green" data-infoCard="person2" data-name="David">
                             <div class="team-table-card-img">
                                 <img src="./images/personal/person2.jpg" alt="Personal02">
                                 <div class="pos-abs lg-green"></div>
@@ -481,7 +481,7 @@
                                 <div class="behind-line-items bg-green"></div>
                             </div>
                         </div>
-                        <div class="team-table-card-item shadow-purple" data-infoCard="person3">
+                        <div class="team-table-card-item shadow-purple" data-infoCard="person3" data-name="Anna">
                             <div class="team-table-card-img">
                                 <img src="images/personal/person3.jpg" alt="Personal03">
                                 <div class="pos-abs lg-purple"></div>
@@ -494,7 +494,7 @@
                                 <div class="behind-line-items bg-purple"></div>
                             </div>
                         </div>
-                        <div class="team-table-card-item shadow-orange" data-infoCard="person4">
+                        <div class="team-table-card-item shadow-orange" data-infoCard="person4" data-name="Jason">
                             <div class="team-table-card-img">
                                 <img src="images/personal/person4.jpg" alt="Personal04">
                                 <div class="pos-abs lg-orange"></div>
@@ -509,9 +509,9 @@
                         </div>
                     </div>
                     <div class="team-table-info">
-                        <div class="team-table-info-arrow"></div>
-                        <div id="team-table-slide">
-                            <div class="team-table-info-item person1" data-infoCard="person1">
+                        <div id="team-arrow" class="team-table-info-arrow"></div>
+                        <div id="team-table-slide" class="team-table-slide">
+                            <div class="team-table-info-item"  data-infoCard="person1">
                                 <p class="team-table-info-title h4">About</p>
                                 <div class="team-table-info-item-inner">
                                     <p class="team-table-info-text">
@@ -573,7 +573,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="team-table-info-item person2" data-infoCard="person2">
+                            <div class="team-table-info-item team-slide" data-infoCard="person2">
                                 <p class="team-table-info-title h4">About</p>
                                 <div class="team-table-info-item-inner">
                                     <p class="team-table-info-text">
@@ -635,7 +635,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="team-table-info-item person3" data-infoCard="person3">
+                            <div class="team-table-info-item team-slide" data-infoCard="person3">
                                 <p class="team-table-info-title h4">About</p>
                                 <div class="team-table-info-item-inner">
                                     <p class="team-table-info-text">
@@ -697,7 +697,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="team-table-info-item person4" data-infoCard="person4">
+                            <div class="team-table-info-item team-slide" data-infoCard="person4">
                                 <p class="team-table-info-title h4">About</p>
                                 <div class="team-table-info-item-inner">
                                     <p class="team-table-info-text">
@@ -1527,18 +1527,19 @@
     </div>
 </main>
 
-<!-- <div id="moda-video">
+ <div id="moda-video">
+     <div id="moda-bg-close" class="moda-video-bg"></div>
     <div class="moda-video-container">
-        <div class="moda-video-close">
+        <div id="moda-video-close" class="moda-video-close">
             <div class="moda-video-vertical"></div>
             <div class="moda-video-horizontal"></div>
         </div>
-        <video src="video/advertising.mp4" controls></video>
+        <video src="video/advertising.mp4" id="moda-video-item" muted controls></video>
     </div>
-</div> -->
+</div>
 
 <!-- Script Start-->
-<script src="js/app.js"></script>
+<script src="js/app.js" defer></script>
 <!-- Script End-->
 </body>
 </html>
