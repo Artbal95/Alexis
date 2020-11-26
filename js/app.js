@@ -319,4 +319,75 @@ document.addEventListener('DOMContentLoaded', function () {
     };
     personInfo.init()
 
-})
+// Options animated
+    const options = {
+        // Get options tags
+        optionTags: document.querySelectorAll('#options p[data-option]'),// [p, p, p, p]
+
+        // Get p tags data-options name
+        optionNameWrite(){
+            let optionName = []
+            this.optionTags.forEach((option) => {
+                optionName.push(option.dataset.option)
+            })
+            return optionName
+        },
+
+        // Get default value if there have a problem with server
+        byDefault() {
+            const optionName = this.optionNameWrite()
+                return{
+                    [optionName[0]]: 12458,
+                    [optionName[1]]: 1796,
+                    [optionName[2]]: 1000,
+                    [optionName[3]]: 1500,
+                }
+        },
+
+        // Numbers styling
+        styleNumbers(){
+            const byDefault = this.byDefault()
+            let styledNum = []
+            Object.keys(byDefault).forEach((numIndex) => {
+                let numLength = +(`${byDefault[numIndex]}`.length)
+                let numString = `${byDefault[numIndex]}`
+                let some = []
+                if(numLength % 3 >= 1){
+                    let count = -1
+                    for( let i = numLength-1; i >= 0; i--){
+                        count++
+                        if( count === 3 ){
+                            some.unshift(',')
+                            some.unshift(numString.split('')[i])
+                        }else{
+                            some.unshift(numString.split('')[i])
+                        }
+                    }
+                    styledNum.push(some.join(''))
+                }else{
+                    styledNum.push(byDefault[numIndex])
+                }
+            })
+            return styledNum
+        },
+
+        // Create function who write that numbers
+        writeNumbers() {
+            this.optionTags.forEach((option, index) => {
+                option.innerHTML = `${this.styleNumbers()[index]}+`
+            })
+        },
+
+        // Scrolling Function
+        init(){
+            this.writeNumbers()
+        }
+    }
+    options.init()
+
+
+
+
+
+
+});
