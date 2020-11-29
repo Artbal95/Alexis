@@ -268,7 +268,7 @@ document.addEventListener('DOMContentLoaded', function () {
         pTags: document.querySelectorAll('#team-table-slide .team-table-info-title'),
 
         // Getting that classname who help us to animated
-        animateClass: 'team-slide',
+        animateClass: 'anime-slide',
 
         // Getting Arrow
         arrowTag: document.getElementById('team-arrow'),
@@ -319,75 +319,114 @@ document.addEventListener('DOMContentLoaded', function () {
     };
     personInfo.init()
 
-// Options animated
-    const options = {
-        // Get options tags
-        optionTags: document.querySelectorAll('#options p[data-option]'),// [p, p, p, p]
+    const testimonials = {
+        // If there has a problem
+        error: false,
 
-        // Get p tags data-options name
-        optionNameWrite(){
-            let optionName = []
-            this.optionTags.forEach((option) => {
-                optionName.push(option.dataset.option)
-            })
-            return optionName
+        // Get Testimonials Table Container
+        tableTag: document.querySelector('#testimonials .testimonials-table'),
+
+        // Get testimonials Slide tags
+        testimonialsTag() {
+            const tag = document.querySelectorAll('#testimonials .testimonials-slide')
+            if (tag || this.error) {
+                this.error = false
+                return tag
+            } else {
+                this.error = true
+            }
+        }, // [div, div]
+
+        // Get testimonials-check Tag
+        testimonialsCheckTag() {
+            const tag = document.getElementById('testimonials-check')
+            if (tag || this.error) {
+                this.error = false
+                return tag
+            } else {
+                this.error = true
+            }
         },
 
-        // Get default value if there have a problem with server
-        byDefault() {
-            const optionName = this.optionNameWrite()
-                return{
-                    [optionName[0]]: 12458,
-                    [optionName[1]]: 1796,
-                    [optionName[2]]: 1000,
-                    [optionName[3]]: 1500,
-                }
+        // Get Anime Class
+        animeClass: 'anime-slide',
+
+        // Get Check div
+        /**
+         * @return {string}
+         */
+        CheckDivHtml(index, bg = 'bg-red') {
+            return `<div class="testimonials-table-radio-round testimonials-br-red"
+                            data-slideTo="person${index}">
+                            <div class="testimonials-table-radio-circle ${bg}"></div>
+                        </div>`
         },
 
-        // Numbers styling
-        styleNumbers(){
-            const byDefault = this.byDefault()
-            let styledNum = []
-            Object.keys(byDefault).forEach((numIndex) => {
-                let numLength = +(`${byDefault[numIndex]}`.length)
-                let numString = `${byDefault[numIndex]}`
-                let some = []
-                if(numLength % 3 >= 1){
-                    let count = -1
-                    for( let i = numLength-1; i >= 0; i--){
-                        count++
-                        if( count === 3 ){
-                            some.unshift(',')
-                            some.unshift(numString.split('')[i])
-                        }else{
-                            some.unshift(numString.split('')[i])
-                        }
+        // testimonials Check Count
+        checkCount() {
+            if (this.error) {
+                this.tableTag.classList.add('no-element')
+                this.tableTag.innerHTML = 'There are no reviews yet'
+            } else {
+                const testTag = this.testimonialsTag()
+                const count = testTag.length
+                for (let i = 1; i <= count; i++) {
+                    if (i > 1) {
+                        testTag.innerHTML = testTag.innerHTML + this.CheckDivHtml(i, 'bg-tr')
+                    } else {
+                        testTag.innerHTML = testTag.innerHTML + this.CheckDivHtml(i)
                     }
-                    styledNum.push(some.join(''))
-                }else{
-                    styledNum.push(byDefault[numIndex])
+                }
+            }
+        },
+
+        // Get Check Tags
+        checkTagsCount() {
+            this.checkCount()
+            return this.testimonialsCheckTag.querySelectorAll('div[data-slideTo]')
+        },
+
+        // testimonials Tag positions
+        testimonialsPos(none = 0) {
+            this.testimonialsTag.forEach((div, index) => {
+                if (index !== none) {
+                    div.classList.add(this.animeClass)
+                } else {
+                    div.classList.remove(this.animeClass)
                 }
             })
-            return styledNum
         },
 
-        // Create function who write that numbers
-        writeNumbers() {
-            this.optionTags.forEach((option, index) => {
-                option.innerHTML = `${this.styleNumbers()[index]}+`
+        // Check Tag Background Color
+        checkBackColor(none = 0) {
+            this.checkTags.forEach((div, index) => {
+                if (index !== none) {
+                    div.querySelector('div').classList.remove('bg-red')
+                    div.querySelector('div').classList.add('bg-tr')
+                } else {
+                    div.querySelector('div').classList.add('bg-red')
+                }
             })
         },
 
-        // Scrolling Function
-        init(){
-            this.writeNumbers()
+
+        clickCheck() {
+            this.checkTags.forEach((check, index) => {
+                check.addEventListener('click', () => {
+                    if (this.testimonialsTag[index].dataset.slide === check.dataset.slideto) {
+                        this.checkBackColor(index)
+                        this.testimonialsPos(index)
+                    }
+                })
+            })
+        },
+
+
+        init() {
+            this.checkTags = this.checkTagsCount()
+            this.clickCheck()
         }
     }
-    options.init()
-
-
-
-
-
-
-});
+    testimonials.init()
+})
+;
