@@ -1,5 +1,19 @@
-document.addEventListener('DOMContentLoaded', function () {
-// Give me navBar container who have tags link with data-scroll attribute
+let loading = false
+window.addEventListener('load', () => {
+    loading = true
+    if (loading) {
+        const time = setTimeout(() => {
+            document.getElementById('loading').style.display = 'none';
+            document.querySelector('.wrapper').style.display = 'block';
+            htmlDocIsLoad()
+            clearTimeout(time)
+        }, 3000)
+    }
+})
+
+
+function htmlDocIsLoad() {
+    // Give me navBar container who have tags link with data-scroll attribute
     const header = document.getElementById('header');
 // Give me where you want to show the navbar(px), pl without px only number
     const navShow = 650;
@@ -383,7 +397,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Get Check Tags
         checkTagsCount() {
             this.checkCount()
-            return this.testimonialsCheckTag.querySelectorAll('div[data-slideTo]')
+            return this.testimonialsCheckTag().querySelectorAll('div[data-slideTo]')
         },
 
         // testimonials Tag positions
@@ -428,5 +442,5 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
     testimonials.init()
-})
-;
+}
+
