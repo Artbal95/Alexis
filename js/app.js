@@ -268,7 +268,7 @@ document.addEventListener('DOMContentLoaded', function () {
         pTags: document.querySelectorAll('#team-table-slide .team-table-info-title'),
 
         // Getting that classname who help us to animated
-        animateClass: 'team-slide',
+        animateClass: 'anime-slide',
 
         // Getting Arrow
         arrowTag: document.getElementById('team-arrow'),
@@ -319,4 +319,114 @@ document.addEventListener('DOMContentLoaded', function () {
     };
     personInfo.init()
 
+    const testimonials = {
+        // If there has a problem
+        error: false,
+
+        // Get Testimonials Table Container
+        tableTag: document.querySelector('#testimonials .testimonials-table'),
+
+        // Get testimonials Slide tags
+        testimonialsTag() {
+            const tag = document.querySelectorAll('#testimonials .testimonials-slide')
+            if (tag || this.error) {
+                this.error = false
+                return tag
+            } else {
+                this.error = true
+            }
+        }, // [div, div]
+
+        // Get testimonials-check Tag
+        testimonialsCheckTag() {
+            const tag = document.getElementById('testimonials-check')
+            if (tag || this.error) {
+                this.error = false
+                return tag
+            } else {
+                this.error = true
+            }
+        },
+
+        // Get Anime Class
+        animeClass: 'anime-slide',
+
+        // Get Check div
+        /**
+         * @return {string}
+         */
+        CheckDivHtml(index, bg = 'bg-red') {
+            return `<div class="testimonials-table-radio-round testimonials-br-red"
+                            data-slideTo="person${index}">
+                            <div class="testimonials-table-radio-circle ${bg}"></div>
+                        </div>`
+        },
+
+        // testimonials Check Count
+        checkCount() {
+            if (this.error) {
+                this.tableTag.classList.add('no-element')
+                this.tableTag.innerHTML = 'There are no reviews yet'
+            } else {
+                const testTag = this.testimonialsTag()
+                const count = testTag.length
+                for (let i = 1; i <= count; i++) {
+                    if (i > 1) {
+                        testTag.innerHTML = testTag.innerHTML + this.CheckDivHtml(i, 'bg-tr')
+                    } else {
+                        testTag.innerHTML = testTag.innerHTML + this.CheckDivHtml(i)
+                    }
+                }
+            }
+        },
+
+        // Get Check Tags
+        checkTagsCount() {
+            this.checkCount()
+            return this.testimonialsCheckTag.querySelectorAll('div[data-slideTo]')
+        },
+
+        // testimonials Tag positions
+        testimonialsPos(none = 0) {
+            this.testimonialsTag.forEach((div, index) => {
+                if (index !== none) {
+                    div.classList.add(this.animeClass)
+                } else {
+                    div.classList.remove(this.animeClass)
+                }
+            })
+        },
+
+        // Check Tag Background Color
+        checkBackColor(none = 0) {
+            this.checkTags.forEach((div, index) => {
+                if (index !== none) {
+                    div.querySelector('div').classList.remove('bg-red')
+                    div.querySelector('div').classList.add('bg-tr')
+                } else {
+                    div.querySelector('div').classList.add('bg-red')
+                }
+            })
+        },
+
+
+        clickCheck() {
+            this.checkTags.forEach((check, index) => {
+                check.addEventListener('click', () => {
+                    if (this.testimonialsTag[index].dataset.slide === check.dataset.slideto) {
+                        this.checkBackColor(index)
+                        this.testimonialsPos(index)
+                    }
+                })
+            })
+        },
+
+
+        init() {
+            this.checkTags = this.checkTagsCount()
+            this.clickCheck()
+        }
+    }
+    testimonials.init()
 })
+;

@@ -106,7 +106,13 @@ div#moda-video {
 
 /* Moda video container show and hide animation End*/
 
-.team-slide{
+.anime-slide{
     left: 100%;
     opacity: 0;
+}
+
+.no-element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
