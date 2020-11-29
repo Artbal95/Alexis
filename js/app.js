@@ -2,17 +2,43 @@ let loading = false
 window.addEventListener('load', () => {
     loading = true
     if (loading) {
+        const scrollTop = window.localStorage.getItem('scrollTop')
+        const dateTime = window.localStorage.getItem('dateTime')
         const time = setTimeout(() => {
             document.getElementById('loading').style.display = 'none';
             document.querySelector('.wrapper').style.display = 'block';
             htmlDocIsLoad()
+            if(scrollTop && dateTime){
+                if(new Date().getTime() - dateTime > 7000){
+                    window.localStorage.setItem('scrollTop', `${0}`)
+                    window.scrollTo({
+                        top: +window.localStorage.getItem('scrollTop'),
+                        left: 0,
+                        behavior: "auto"
+                    })
+                }else{
+                    window.scrollTo({
+                        top: +window.localStorage.getItem('scrollTop'),
+                        left: 0,
+                        behavior: "auto"
+                    })
+                }
+            }
             clearTimeout(time)
         }, 3000)
     }
 })
 
+window.addEventListener('beforeunload', () => {
+    const topScrollY = window.scrollY
+    const nowDate = new Date().getTime()
+    window.localStorage.setItem('dateTime', `${nowDate}`)
+    window.localStorage.setItem('scrollTop', `${topScrollY}`)
+})
+
 
 function htmlDocIsLoad() {
+    console.log(window.scrollY)
     // Give me navBar container who have tags link with data-scroll attribute
     const header = document.getElementById('header');
 // Give me where you want to show the navbar(px), pl without px only number
@@ -371,7 +397,7 @@ function htmlDocIsLoad() {
          */
         CheckDivHtml(index, bg = 'bg-red') {
             return `<div class="testimonials-table-radio-round testimonials-br-red"
-                            data-slideTo="person${index}">
+                            data-slideTo="person${index + 1}">
                             <div class="testimonials-table-radio-circle ${bg}"></div>
                         </div>`
         },
@@ -383,14 +409,14 @@ function htmlDocIsLoad() {
                 this.tableTag.innerHTML = 'There are no reviews yet'
             } else {
                 const testTag = this.testimonialsTag()
-                const count = testTag.length
-                for (let i = 1; i <= count; i++) {
-                    if (i > 1) {
-                        testTag.innerHTML = testTag.innerHTML + this.CheckDivHtml(i, 'bg-tr')
-                    } else {
-                        testTag.innerHTML = testTag.innerHTML + this.CheckDivHtml(i)
-                    }
-                }
+                const checkTag = this.testimonialsCheckTag()
+                testTag.forEach((tag, index) => {
+                        if (index !== 0) {
+                            checkTag.innerHTML = checkTag.innerHTML + this.CheckDivHtml(index, 'bg-tr')
+                        } else {
+                            checkTag.innerHTML = checkTag.innerHTML + this.CheckDivHtml(index)
+                        }
+                })
             }
         },
 
@@ -402,7 +428,8 @@ function htmlDocIsLoad() {
 
         // testimonials Tag positions
         testimonialsPos(none = 0) {
-            this.testimonialsTag.forEach((div, index) => {
+            const testTags = this.testimonialsTag()
+            testTags.forEach((div, index) => {
                 if (index !== none) {
                     div.classList.add(this.animeClass)
                 } else {
@@ -425,9 +452,10 @@ function htmlDocIsLoad() {
 
 
         clickCheck() {
+            const testTag = this.testimonialsTag()
             this.checkTags.forEach((check, index) => {
                 check.addEventListener('click', () => {
-                    if (this.testimonialsTag[index].dataset.slide === check.dataset.slideto) {
+                    if (testTag[index].dataset.slide === check.dataset.slideto) {
                         this.checkBackColor(index)
                         this.testimonialsPos(index)
                     }
