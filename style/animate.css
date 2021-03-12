@@ -42,7 +42,7 @@ div#moda-video {
     height: 100%;
     position: fixed;
     z-index: 1000;
-    top: -200%;
+    top: 0;
     right: 0;
     left: 0;
     display: flex;
