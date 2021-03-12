@@ -27,14 +27,14 @@ window.addEventListener('load', () => {
             clearTimeout(time)
         }, 3000)
     }
-})
+// })
 
-window.addEventListener('beforeunload', () => {
-    const topScrollY = window.scrollY
-    const nowDate = new Date().getTime()
-    window.localStorage.setItem('dateTime', `${nowDate}`)
-    window.localStorage.setItem('scrollTop', `${topScrollY}`)
-})
+// window.addEventListener('beforeunload', () => {
+//     const topScrollY = window.scrollY
+//     const nowDate = new Date().getTime()
+//     window.localStorage.setItem('dateTime', `${nowDate}`)
+//     window.localStorage.setItem('scrollTop', `${topScrollY}`)
+// })
 
 
 function htmlDocIsLoad() {

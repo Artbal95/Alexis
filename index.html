@@ -24,22 +24,22 @@
     <header id="header" class="header-container">
         <nav class="nav">
             <div class="nav-logo">
-                <a data-scroll="home">
+                <a href="#home">
                     <p>
                         <span class="cl-logo">A</span>lexis
                     </p>
                 </a>
             </div>
             <div class="nav-list">
-                <a data-scroll="about">About Us</a>
-                <a data-scroll="focus">Our Focus</a>
-                <a data-scroll="portfolio">Portfolio</a>
-                <a data-scroll="team">Our Team</a>
-                <a data-scroll="work">Work Steps</a>
-                <a data-scroll="pricing">Pricing</a>
-                <a data-scroll="testimonials">Testimonials</a>
-                <a data-scroll="blog">Blog</a>
-                <a data-scroll="touch">Contact</a>
+                <a href="#about">About Us</a>
+                <a href="#focus">Our Focus</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#team">Our Team</a>
+                <a href="#work">Work Steps</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#blog">Blog</a>
+                <a href="#touch">Contact</a>
             </div>
             <div class="nav-mobile" style="display: none">
             </div>
@@ -48,7 +48,7 @@
 
     <main id="main" class="main-container">
 
-        <section class="home" data-scrollTo="home">
+        <section class="home" id="home">
             <div class="home-container">
                 <div class="pos-abs bg-bg-black"></div>
                 <div class="home-inner">
@@ -86,7 +86,7 @@
             </div>
         </section>
 
-        <section class="about" data-scrollTo="about">
+        <section class="about" id="about">
             <div class="about-container">
                 <div class="about-inner">
                     <div class="about-image">
@@ -123,7 +123,7 @@
             </div>
         </section>
 
-        <section class="focus" data-scrollTo="focus">
+        <section class="focus" id="focus">
             <div class="focus-container">
                 <div class="numberPos numberTwo">
                     <p class="secNumber">02</p>
@@ -217,7 +217,7 @@
             </div>
         </section>
 
-        <section class="portfolio" data-scrollTo="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="portfolio-container">
                 <div class="numberPos numberThree">
                     <p class="secNumber">03</p>
@@ -447,7 +447,7 @@
             </div>
         </section>
 
-        <section class="team" data-scrollTo="team">
+        <section class="team" id="team">
             <div class="team-container">
                 <div class="numberPos numberFour">
                     <p class="secNumber">04</p>
@@ -856,7 +856,7 @@
             </div>
         </section>
 
-        <section class="work" data-scrollTo="work">
+        <section class="work" id="work">
             <div class="work-container">
                 <div class="numberPos numberFive">
                     <p class="secNumber">05</p>
@@ -958,7 +958,7 @@
             </div>
         </section>
 
-        <section class="pricing" data-scrollTo="pricing">
+        <section class="pricing" id="pricing">
             <div class="pricing-container">
                 <div class="numberPos numberSix">
                     <div class="secNumber">06</div>
@@ -1041,7 +1041,7 @@
             </div>
         </section>
 
-        <section id="testimonials" class="testimonials" data-scrollTo="testimonials">
+        <section id="testimonials" class="testimonials" id="testimonials">
             <div class="testimonials-container">
                 <div class="pos-abs bg-bg-black"></div>
                 <div class="numberPos numberSeven">
@@ -1368,7 +1368,7 @@
             </div>
         </section>
 
-        <section class="blog" data-scrollTo="blog">
+        <section class="blog" id="blog">
             <div class="blog-container">
                 <div class="numberPos numberNine">
                     <div class="secNumber">09</div>
@@ -1474,7 +1474,7 @@
             </div>
         </section>
 
-        <section class="touch" data-scrollTo="touch">
+        <section class="touch" id="touch">
             <div class="touch-container">
                 <div class="numberPos numberTen">
                     <div class="secNumber">10</div>
@@ -1619,7 +1619,7 @@
         </div>
     </main>
 
-    <div id="moda-video">
+    <div id="moda-video" style="display: none;">
         <div id="moda-bg-close" class="moda-video-bg"></div>
         <div class="moda-video-container">
             <div id="moda-video-close" class="moda-video-close">
@@ -1653,7 +1653,9 @@
 </div>
 
 <!-- Script Start-->
-<script src="js/app.js" defer></script>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<!-- <script src="js/app.js" defer></script> -->
+<script src="./js/main.js"></script>
 <!-- Script End-->
 </body>
 </html>
